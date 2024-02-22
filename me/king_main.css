@@ -99006,7 +99006,7 @@ Created:    02/2023
     --main-color-one: var(--primary-color);
     --main-color-two: var(--secondary-color);
     --bg-color-one: var(--light-h), var(--light-s), calc(var(--light-l) - 10%);
-    --bg-color-two: var(--light-color);
+    --bg-color-two: var(--dark-color);
     --bg-color-reverse: var(--dark-color);
     --inputs-bg-color: var(--light-h), var(--light-s), calc(var(--light-l) - 7%);
     --t-color-one: var(--dark-color);
@@ -115400,7 +115400,7 @@ Created:    02/2023
     --main-color-one: var(--primary-color);
     --main-color-two: var(--secondary-color);
     --bg-color-one: var(--light-h), var(--light-s), calc(var(--light-l) - 10%);
-    --bg-color-two: var(--light-color);
+    --bg-color-two: var(---dark-color);
     --bg-color-reverse: var(--dark-color);
     --inputs-bg-color: var(--light-h), var(--light-s), calc(var(--light-l) - 7%);
     --t-color-one: var(--dark-color);
@@ -121476,7 +121476,7 @@ li.portfolio__loadMore {
     --main-color-one: var(--primary-color);
     --main-color-two: var(--secondary-color);
     --bg-color-one: var(--light-h), var(--light-s), calc(var(--light-l) - 10%);
-    --bg-color-two: var(--light-color);
+    --bg-color-two: var(--dark-color);
     --bg-color-reverse: var(--dark-color);
     --inputs-bg-color: var(--light-h), var(--light-s), calc(var(--light-l) - 7%);
     --t-color-one: var(--dark-color);
