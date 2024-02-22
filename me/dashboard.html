@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
+    <div class="task-manager">
+      <div class="left-bar">
+        <div class="upper-part">
+          <div class="actions">
+            <div class="circle"></div>
+            <div class="circle-2"></div>
+          </div>
+        </div>
+        <div class="left-content">
+          <ul class="action-list">
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-inbox"
+                viewBox="0 0 24 24">
+                <path d="M22 12h-6l-2 3h-4l-2-3H2" />
+                <path
+                  d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+              </svg>
+              <span>Inbox</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-star">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              <span> Today</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-calendar"
+                viewBox="0 0 24 24">
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                <path d="M16 2v4M8 2v4m-5 4h18" />
+              </svg>
+              <span>Upcoming</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-hash">
+                <line x1="4" y1="9" x2="20" y2="9" />
+                <line x1="4" y1="15" x2="20" y2="15" />
+                <line x1="10" y1="3" x2="8" y2="21" />
+                <line x1="16" y1="3" x2="14" y2="21" /></svg>
+              <span>Important</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+              <span>Meetings</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-trash"
+                viewBox="0 0 24 24">
+                <path d="M3 6h18m-2 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+              </svg>
+              <span>Trash</span>
+            </li>
+          </ul>
+          <ul class="category-list">
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+              <span>Family</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-sun"
+                viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="5" />
+                <path
+                  d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+              </svg>
+              <span>Vacation</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-trending-up">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" /></svg>
+              <span>Festival</span>
+            </li>
+            <li class="item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-zap">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
+              <span>Concerts</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="header">Today Tasks</div>
+        <div class="content-categories">
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-1">
+            <label class="category" for="opt-1">All</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-2" checked>
+            <label class="category" for="opt-2">Important</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-3">
+            <label class="category" for="opt-3">Notes</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-4">
+            <label class="category" for="opt-4">Links</label>
+          </div>
+        </div>
+        <div class="tasks-wrapper">
+            <div id="right_panel">
+                <div class="wrap-table">
+                  <table>
+                
+                    <tbody>
+                      <tr>
+                        <td class="sticky-col" scope="row" data-label="Customer">
+                          <div class="user__info">
+                            <label>
+                              <input type="checkbox">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              </span>
+                            </label>
+                             <img class="user__photo" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+                            <div>
+                              <div class="user__name">Lindsay Walton</div>
+                              <div class="user__email">lindsay@example.com</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td data-label="Status">
+                          <div class="user__badge">Enrolled</div>
+                        </td>
+                        <td data-label="Course">
+                          <span>HTML</span>
+                        </td>
+                        <td data-label="Enrolled">Member</td>
+                        <td data-label="Progress">
+                          <progress value="32" max="100"> 32% </progress>
+                        </td>
+                        <td data-label="Date">9/08/2023</td>
+                        <td data-label="Actions" class="sticky-col sticky-col-right">
+                          <a href="#" class="user__Deleet">Deleet</a>
+                          </td>
+                          </tr>
+                      <tr>
+                        <td class="sticky-col" scope="row" data-label="Customer">
+                          <div class="user__info">
+                            <label>
+                              <input type="checkbox">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              </span>
+                            </label>
+                             <img class="user__photo" src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg" alt="">
+                            <div>
+                              <div class="user__name">Marvin McKinney</div>
+                              <div class="user__email">marvin@example.com</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td data-label="Status">
+                          <div class="user__badge">Enrolled</div>
+                        </td>
+                        <td data-label="Course">
+                          <span>CSS</span>
+                        </td>
+                        <td data-label="Enrolled">Member</td>
+                        <td data-label="Progress">
+                          <progress value="56" max="100"> 56% </progress>
+                        </td>
+                        <td data-label="Date">3/13/2023</td>
+                        <td data-label="Actions" class="sticky-col sticky-col-right">
+                          <a href="#" class="user__Deleet">Deleet</a>
+                          </td>
+                          </tr>
+                      <tr>
+                        <td class="sticky-col" scope="row" data-label="Customer">
+                          <div class="user__info">
+                            <label>
+                              <input type="checkbox">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              </span>
+                            </label>
+                             <img class="user__photo" src="https://img.freepik.com/free-photo/female-looking-directly-into-camera_273609-12389.jpg?t=st=1698951187~exp=1698951787~hmac=56a4af748044a4b82323def79882a55ac39f150aea6e1738cba45a52f3e9563a" alt="">
+                            <div>
+                              <div class="user__name">Alma Lawson</div>
+                              <div class="user__email">alma@example.com</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td data-label="Status">
+                          <div class="user__badge user__badge_unpaid">Not paid</div>
+                        </td>
+                        <td data-label="Course">
+                          <span>Ruby on Rails</span>
+                        </td>
+                        <td data-label="Enrolled">Member</td>
+                        <td data-label="Progress">
+                          <progress value="12" max="100"> 12% </progress>
+                        </td>
+                        <td data-label="Date">10/02/2023</td>
+                        <td data-label="Actions" class="sticky-col sticky-col-right">
+                          <a href="#" class="user__Deleet">Deleet</a>
+                          </td>
+                          </tr>
+                      <tr>
+                        <td class="sticky-col" scope="row" data-label="Customer">
+                          <div class="user__info">
+                            <label>
+                              <input type="checkbox">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              </span>
+                            </label>
+                             <img class="user__photo" src="https://as2.ftcdn.net/v2/jpg/02/24/86/95/1000_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg" alt="">
+                            <div>
+                              <div class="user__name">Floyd Miles</div>
+                              <div class="user__email">floyd@example.com</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td data-label="Status">
+                          <div class="user__badge">Enrolled</div>
+                        </td>
+                        <td data-label="Course">
+                          <span>CSS</span>
+                        </td>
+                        <td data-label="Enrolled">Member</td>
+                        <td data-label="Progress">
+                          <progress value="100" max="100"> 100% </progress>
+                        </td>
+                        <td data-label="Date">6/12/2023</td>
+                        <td data-label="Actions" class="sticky-col sticky-col-right">
+                          <a href="#" class="user__Deleet">Deleet</a>
+                          </td>
+                          </tr>
+                      <tr>
+                        <td class="sticky-col" scope="row" data-label="Customer">
+                          <div class="user__info">
+                            <label>
+                              <input type="checkbox">
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              </span>
+                            </label>
+                             <img class="user__photo" src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?t=st=1698950906~exp=1698951506~hmac=d7a71b36eec872667dc27ea767679dc74adf02bff3acb18a1b1523b63843fdfa" alt="">
+                            <div>
+                              <div class="user__name">Georgia Young</div>
+                              <div class="user__email">georgia@example.com</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td data-label="Status">
+                          <div class="user__badge user__badge_pending">Pending</div>
+                        </td>
+                        <td data-label="Course">
+                          <span>JavaScript</span>
+                        </td>
+                        <td data-label="Enrolled">Member</td>
+                        <td data-label="Progress">
+                          <progress value="10" max="100"> 10% </progress>
+                        </td>
+                        <td data-label="Date">9/29/2023</td>
+                        <td data-label="Actions" class="sticky-col sticky-col-right">
+                          <a href="#" class="user__Deleet">Deleet</a>
+                          </td>
+                          </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button id="btn_resize">
+                  <span></span>
+                </button>
+              </div>
+              <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+
+.wrap-table {
+  overflow-x: auto;
+  width: 100%;
+  container-type: inline-size;
+  container-name: table;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+th {
+  font-weight: 700;
+  color: #374151;
+  font-size: 14px;
+  padding: 12px 14px;
+  text-align: left;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.user__photo {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.user__info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.user__email {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.user__badge {
+  width: max-content;
+  background: #dcfce7;
+  border-radius: 6px;
+  border: 1px solid #15803d;
+  color: #15803d;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.user__badge:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100px;
+  background: #15803d;
+  display: block;
+}
+
+.user__badge_pending {
+  background: #fefce8;
+  color: #8a551c;
+  border-color: #f4e7c5;
+}
+
+.user__badge_pending:before {
+  background: #8a551c;
+}
+
+.user__badge_unpaid {
+  background: #fef2f2;
+  color: #b91c1c;
+  border-color: #fbe0e0;
+}
+
+.user__badge_unpaid:before {
+  background: #b91c1c;
+}
+
+.user__Deleet {
+  display: block;
+  padding: 4px 12px;
+  text-decoration: none;
+}
+
+input {
+  display: none;
+}
+
+input + span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+input + span > svg {
+  opacity: 0;
+}
+
+input:checked + span {
+  background: #dcfce7;
+  border: 2px solid #15803d;
+  color: #15803d;
+}
+
+input:checked + span > svg {
+  opacity: 1;
+}
+
+progress {
+  display: block;
+  width: 100px;
+  height: 7px;
+  -webkit-appearance: none;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #10b981;
+  border-radius: 10px;
+}
+
+.user__Deleet {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #6366f1;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
+@container table (min-width: 400px) {
+    .sticky-col {
+     position: sticky;
+     left: 0;
+  }
+  
+  .sticky-col-right {
+    right: 0;
+  }
+}
+
+@container table (max-width: 400px) {
+  td::before {
+      content: attr(data-label);
+      font-weight: 700;
+      color: #374151;
+      font-size: 14px;  
+  }
+  
+  label {
+    display: none;
+  }
+  
+  td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+  
+  td:first-child {
+    background: #f9fafb;
+  }
+  
+  th {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+#right_panel {
+  width: 1000px;
+  position:relative;
+}
+
+#btn_resize {
+  cursor: ew-resize;
+  width: 14px;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: calc(100% + 3px);
+  background: #fff;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  border: none;
+  padding: 0;
+}
+
+#btn_resize span {
+  background: #94a3b8;
+  height: 32px;
+  width: 4px;
+  display: block;
+  border-radius: 10px;
+}
+              </style>
+          <div class="header upcoming">coments</div>
+      
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-item-icon | avatar-icon">
+                <i class="avatar">
+                  <img src="https://assets.codepen.io/285131/hat-man.png" />
+                </i>
+              </span>
+              <div class="new-comment">
+                <input type="text" placeholder="Add a comment..." />
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-item-icon | faded-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path fill="currentColor" d="M12.9 6.858l4.242 4.243L7.242 21H3v-4.243l9.9-9.9zm1.414-1.414l2.121-2.122a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414l-2.122 2.121-4.242-4.242z" />
+                </svg>
+              </span>
+              <div class="timeline-item-description">
+                <i class="avatar | small">
+                  <img src="https://assets.codepen.io/285131/winking-girl.png" />
+                </i>
+                <span><a href="#">Luna Bonifacio</a> has changed <a href="#">2 attributes</a> on <time datetime="21-01-2021">Jan 21, 2021</time></span>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-item-icon | faded-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path fill="currentColor" d="M12 13H4v-2h8V4l8 8-8 8z" />
+                </svg>
+              </span>
+              <div class="timeline-item-description">
+                <i class="avatar | small">
+                  <img src="https://assets.codepen.io/285131/hat-man.png" />
+                </i>
+                <span><a href="#">Yoan Almedia</a> moved <a href="#">Eric Lubin</a> to <a href="#">📚 Technical Test</a> on <time datetime="20-01-2021">Jan 20, 2021</time></span>
+              </div>
+            </li>
+            <li class="timeline-item | extra-space">
+              <span class="timeline-item-icon | filled-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path fill="currentColor" d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z" />
+                </svg>
+              </span>
+              <div class="timeline-item-wrapper">
+                <div class="timeline-item-description">
+                  <i class="avatar | small">
+                    <img src="https://assets.codepen.io/285131/hat-man.png" />
+                  </i>
+                  <span><a href="#">Yoan Almedia</a> commented on <time datetime="20-01-2021">Jan 20, 2021</time></span>
+                </div>
+                <div class="comment">
+                  <p>I've sent him the assignment we discussed recently, he is coming back to us this week. Regarding to our last call, I really enjoyed talking to him and so far he has the profile we are looking for. Can't wait to see his technical test, I'll keep you posted and we'll debrief it all together!😊</p>
+                  <button class="button">👏 2</button>
+                  <button class="button | square">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 12a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7z" />
+                    </svg>
+                  </button>
+                </div>
+                <button class="show-replies">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-forward" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 11l4 4l-4 4m4 -4h-11a4 4 0 0 1 0 -8h1" />
+                  </svg>
+                  Show 3 replies
+                  <span class="avatar-list">
+                    <i class="avatar | small">
+                      <img src="https://assets.codepen.io/285131/hat-man.png" />
+                    </i>
+                    <i class="avatar | small">
+                      <img src="https://assets.codepen.io/285131/winking-girl.png" />
+                    </i> <i class="avatar | small">
+                      <img src="https://assets.codepen.io/285131/smiling-girl.png" />
+                    </i>
+                  </span>
+                </button>
+            </li>
+          </ol>
+
+
+        </div>
+
+          <style>
+            @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+:root {
+--c-grey-100: #f4f6f8;
+--c-grey-200: #e3e3e3;
+--c-grey-300: #b2b2b2;
+--c-grey-400: #7b7b7b;
+--c-grey-500: #3d3d3d;
+--c-blue-500: #688afd;
+}
+
+
+button,
+input,
+select,
+textarea {
+font: inherit;
+}
+
+a {
+color: inherit;
+}
+
+img {
+display: block;
+max-width: 100%;
+}
+
+/* End basic CSS override */
+.timeline {
+
+display: flex;
+flex-direction: column;
+border-left: 2px solid var(--c-grey-200);
+font-size: 1.125rem;
+padding-left: 30px;
+margin: 10px 60px;
+}
+
+.timeline-item {
+display: flex;
+gap: 24px;
+}
+.timeline-item + * {
+margin-top: 24px;
+}
+.timeline-item + .extra-space {
+margin-top: 48px;
+}
+
+.new-comment {
+width: 100%;
+}
+.new-comment input {
+border: 1px solid var(--c-grey-200);
+border-radius: 6px;
+height: 48px;
+padding: 0 16px;
+width: 100%;
+}
+.new-comment input::-moz-placeholder {
+color: var(--c-grey-300);
+}
+.new-comment input:-ms-input-placeholder {
+color: var(--c-grey-300);
+}
+.new-comment input::placeholder {
+color: var(--c-grey-300);
+}
+.new-comment input:focus {
+border-color: var(--c-grey-300);
+outline: 0;
+box-shadow: 0 0 0 4px var(--c-grey-100);
+}
+
+.timeline-item-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-left: -52px;
+flex-shrink: 0;
+overflow: hidden;
+box-shadow: 0 0 0 6px #fff;
+}
+.timeline-item-icon svg {
+width: 20px;
+height: 20px;
+}
+.timeline-item-icon.faded-icon {
+background-color: var(--c-grey-100);
+color: var(--c-grey-400);
+}
+.timeline-item-icon.filled-icon {
+background-color: var(--c-blue-500);
+color: #fff;
+}
+
+.timeline-item-description {
+display: flex;
+padding-top: 6px;
+gap: 8px;
+color: var(--c-grey-400);
+}
+.timeline-item-description img {
+flex-shrink: 0;
+}
+.timeline-item-description a {
+color: var(--c-grey-500);
+font-weight: 500;
+text-decoration: none;
+}
+.timeline-item-description a:hover, .timeline-item-description a:focus {
+outline: 0;
+color: var(--c-blue-500);
+}
+
+.avatar {
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+overflow: hidden;
+aspect-ratio: 1/1;
+flex-shrink: 0;
+width: 40px;
+height: 40px;
+}
+.avatar.small {
+width: 28px;
+height: 28px;
+}
+.avatar img {
+-o-object-fit: cover;
+   object-fit: cover;
+}
+
+.comment {
+margin-top: 12px;
+color: var(--c-grey-500);
+border: 1px solid var(--c-grey-200);
+border-radius: 6px;
+padding: 16px;
+font-size: 1rem;
+}
+
+.button {
+border: 0;
+padding: 0;
+display: inline-flex;
+vertical-align: middle;
+margin-right: 4px;
+margin-top: 12px;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+height: 32px;
+padding: 0 8px;
+background-color: var(--c-grey-100);
+flex-shrink: 0;
+cursor: pointer;
+border-radius: 99em;
+}
+.button:hover {
+background-color: var(--c-grey-200);
+}
+.button.square {
+border-radius: 50%;
+color: var(--c-grey-400);
+width: 32px;
+height: 32px;
+padding: 0;
+}
+.button.square svg {
+width: 24px;
+height: 24px;
+}
+.button.square:hover {
+background-color: var(--c-grey-200);
+color: var(--c-grey-500);
+}
+
+.show-replies {
+color: var(--c-grey-300);
+background-color: transparent;
+border: 0;
+padding: 0;
+margin-top: 16px;
+display: flex;
+align-items: center;
+gap: 6px;
+font-size: 1rem;
+cursor: pointer;
+}
+.show-replies svg {
+flex-shrink: 0;
+width: 24px;
+height: 24px;
+}
+.show-replies:hover, .show-replies:focus {
+color: var(--c-grey-500);
+}
+
+.avatar-list {
+display: flex;
+align-items: center;
+}
+.avatar-list > * {
+position: relative;
+box-shadow: 0 0 0 2px #fff;
+margin-right: -8px;
+}
+          </style>
+
+
+
+      </div>
+      <div class="right-bar">
+        <div class="top-part">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-users">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+          <div class="count">6</div>
+        </div>
+        <div class="header">Schedule</div>
+        <div class="right-content">
+          <div class="task-box yellow">
+            <div class="description-task">
+              <div class="time">08:00 - 09:00 AM</div>
+              <div class="task-name">Product Review</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img
+                src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                alt="member">
+              <img
+                src="https://images.unsplash.com/photo-1476657680631-c07285ff2581?ixlib=rb-1.2.1&auto=format&fit=crop&w=2210&q=80"
+                alt="member-2">
+              <img
+                src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="member-3">
+              <img
+                src="https://images.unsplash.com/photo-1455504490126-80ed4d83b3b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                alt="member-4">
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="time">10:00 - 11:00 AM</div>
+              <div class="task-name">Design Meeting</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img
+                src="https://images.unsplash.com/photo-1484688493527-670f98f9b195?ixlib=rb-1.2.1&auto=format&fit=crop&w=2230&q=80"
+                alt="member">
+              <img
+                src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="member-2">
+              <img
+                src="https://images.unsplash.com/photo-1455504490126-80ed4d83b3b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                alt="member-3">
+            </div>
+          </div>
+          <div class="task-box red">
+            <div class="description-task">
+              <div class="time">01:00 - 02:00 PM</div>
+              <div class="task-name">Team Meeting</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img
+                src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                alt="member">
+              <img
+                src="https://images.unsplash.com/photo-1475552113915-6fcb52652ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80"
+                alt="member-2">
+              <img
+                src="https://images.unsplash.com/photo-1493752603190-08d8b5d1781d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80"
+                alt="member-3">
+              <img
+                src="https://images.unsplash.com/photo-1484688493527-670f98f9b195?ixlib=rb-1.2.1&auto=format&fit=crop&w=2230&q=80"
+                alt="member-4">
+            </div>
+          </div>
+          <div class="task-box green">
+            <div class="description-task">
+              <div class="time">03:00 - 04:00 PM</div>
+              <div class="task-name">Release Event</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img
+                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=943&q=80"
+                alt="member">
+              <img
+                src="https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=881&q=80"
+                alt="member-2">
+              <img
+                src="https://images.unsplash.com/photo-1521122872341-065792fb2fa0?ixlib=rb-1.2.1&auto=format&fit=crop&w=2208&q=80"
+                alt="member-3">
+              <img
+                src="https://images.unsplash.com/photo-1486302913014-862923f5fd48?ixlib=rb-1.2.1&auto=format&fit=crop&w=3400&q=80"
+                alt="member-4">
+              <img
+                src="https://images.unsplash.com/photo-1484187216010-59798e9cc726?ixlib=rb-1.2.1&auto=format&fit=crop&w=955&q=80"
+                alt="member-5">
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="time">08:00 - 09:00 PM</div>
+              <div class="task-name">Release Event</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img
+                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=943&q=80"
+                alt="member">
+              <img
+                src="https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=881&q=80"
+                alt="member-2">
+              <img
+                src="https://images.unsplash.com/photo-1521122872341-065792fb2fa0?ixlib=rb-1.2.1&auto=format&fit=crop&w=2208&q=80"
+                alt="member-3">
+              <img
+                src="https://images.unsplash.com/photo-1486302913014-862923f5fd48?ixlib=rb-1.2.1&auto=format&fit=crop&w=3400&q=80"
+                alt="member-4">
+              <img
+                src="https://images.unsplash.com/photo-1484187216010-59798e9cc726?ixlib=rb-1.2.1&auto=format&fit=crop&w=955&q=80"
+                alt="member-5">
+            </div>
+          </div>
+          <div class="task-box yellow">
+            <div class="description-task">
+              <div class="time">11:00 - 12:00 PM</div>
+              <div class="task-name">Practise</div>
+            </div>
+            <div class="more-button"></div>
+            <div class="members">
+              <img
+                src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                alt="member">
+              <img
+                src="https://images.unsplash.com/photo-1476657680631-c07285ff2581?ixlib=rb-1.2.1&auto=format&fit=crop&w=2210&q=80"
+                alt="member-2">
+              <img
+                src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                alt="member-3">
+              <img
+                src="https://images.unsplash.com/photo-1455504490126-80ed4d83b3b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                alt="member-4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <style>
+        * {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #f5f8ff;
+  --main-color: #353536;
+  --secondary-color: #8e92a4;
+  --main-text-color: #5d606b;
+  --secondary-dark-color: #9496a5;
+  --tag-color-one: #e0fbf6;
+  --tag-color-text-one: #58c2a9;
+  --tag-color-two: #ece7fe;
+  --tag-color-text-two: #8972f3;
+  --tag-color-three: #fde7ea;
+  --tag-color-text-three: #e77f89;
+  --tag-color-four: #f7f8fc;
+  --tag-color-text-four: #a0a6b5;
+  --checkbox-color: #009e90;
+  --button-color: #49beb7;
+  --box-color: #fff1d6;
+  --box-color-2: #d3e6ff;
+  --box-color-3: #ffd9d9;
+  --box-color-4: #daffe5;
+  --task-color: #777982;
+}
+
+.top-part .count, .top-part, .item {
+  display: flex;
+  align-items: center;
+}
+
+body {
+font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.task-manager {
+  display: flex;
+  justify-content: space-between;
+
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.left-bar {
+  background-color: var(--bg-color);
+  width: 230px;
+  border-right: 1px solid #e3e7f7;
+  position: relative;
+}
+
+.left-content {
+  padding: 40px;
+}
+
+.item {
+  color: var(--main-color);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.item svg {
+  width: 14px;
+  height: 14px;
+  color: currentcolor;
+  margin-right: 10px;
+}
+
+.category-list {
+  margin-top: 50px;
+}
+.category-list .item {
+  color: var(--secondary-color);
+}
+
+.actions {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fe4d46;
+  box-shadow: 14px 0 0 0 #fbc023, 28px 0 0 0 #7dd21f;
+}
+
+.circle-2 {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #d5d7e3;
+  box-shadow: -6px 0 0 0 #d5d7e3, 6px 0 0 0 #d5d7e3;
+}
+
+.right-bar {
+  width: 320px;
+  border-left: 1px solid #e3e7f7;
+  display: flex;
+  flex-direction: column;
+}
+.right-bar .header {
+  font-size: 20px;
+  color: var(--main-text-color);
+  margin-left: 30px;
+}
+
+.top-part {
+  padding: 30px;
+  align-self: flex-end;
+}
+.top-part svg {
+  width: 14px;
+  height: 14px;
+  color: var(--main-color);
+  margin-right: 14px;
+}
+.top-part .count {
+  font-size: 12px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: #623ce8;
+  color: #fff;
+  justify-content: center;
+}
+
+.right-content {
+  padding: 10px 40px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.task-box {
+  position: relative;
+  border-radius: 12px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px 0px #ebebeb;
+}
+.task-box:hover {
+  transform: scale(1.02);
+}
+
+.time {
+  margin-bottom: 6px;
+  opacity: 0.4;
+  font-size: 10px;
+}
+
+.task-name {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.yellow {
+  background-color: var(--box-color);
+}
+
+.blue {
+  background-color: var(--box-color-2);
+}
+
+.red {
+  background-color: var(--box-color-3);
+}
+
+.green {
+  background-color: var(--box-color-4);
+}
+
+.more-button {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #8e92a4;
+  box-shadow: 0 -4px 0 0 #8e92a4, 0 4px 0 0 #8e92a4;
+  opacity: 0.4;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.members {
+  display: flex;
+  margin-top: 14px;
+}
+.members img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+  object-fit: cover;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 40px 20px 0 20px;
+}
+.page-content .header {
+  font-size: 26px;
+  color: var(--main-color);
+  margin-top: 30px;
+}
+
+.content-categories {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.nav-item {
+  display: none;
+}
+
+.category {
+  font-weight: 500;
+  color: var(--secondary-color);
+  border-bottom: 1px solid #ddd;
+  transition: 0.4s ease-in;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+#opt-1:checked + label,
+#opt-2:checked + label,
+#opt-3:checked + label,
+#opt-4:checked + label {
+  color: var(--checkbox-color);
+  border-bottom: 2px solid var(--checkbox-color);
+}
+
+.task-item {
+  display: none;
+}
+
+.tasks-wrapper {
+  padding: 30px 0;
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+  padding-right: 8px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  color: var(--task-color);
+  font-size: 13px;
+  font-weight: 500;
+}
+.task:hover {
+  transform: translatex(2px);
+}
+.task label {
+  cursor: pointer;
+}
+
+label .label-text {
+  position: relative;
+}
+
+label .label-text:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  left: -24px;
+  transition: 0.2s ease;
+}
+
+.task-item:checked + label .label-text:before {
+  background-color: var(--checkbox-color);
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  border: 1px solid var(--checkbox-color);
+}
+
+.tag {
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+.tag.approved {
+  background-color: var(--tag-color-one);
+  color: var(--tag-color-text-one);
+}
+.tag.progress {
+  background-color: var(--tag-color-two);
+  color: var(--tag-color-text-two);
+}
+.tag.review {
+  background-color: var(--tag-color-three);
+  color: var(--tag-color-text-three);
+}
+.tag.waiting {
+  background-color: var(--tag-color-four);
+  color: var(--tag-color-text-four);
+}
+
+.upcoming {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .left-bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .task-manager {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .right-bar, .page-content {
+    width: 100%;
+    display: block;
+  }
+
+  .tasks-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 520px) {
+  .page-content {
+    padding: 40px 10px 0 10px;
+  }
+
+  .right-content {
+    padding: 10px 16px;
+  }
+
+  .category {
+    padding: 20px;
+  }
+}
+    </style>
+
+
+
+
+
+
+
+    
+</body>
+</html>
