@@ -5464,11 +5464,11 @@ card-skew:hover [data-target="card-skew.shine"] {
 }
 
 .home-sponsors-heart-2.build-in-animate {
-    animation: 5s cubic-bezier(0.535, 0.15, 0.425, 1) -1s : local(home-sponsors-heart-2) infinite
+    animation: 5s cubic-bezier(0.535, 0.15, 0.425, 1) -1s local(home-sponsors-heart-2) infinite
 }
 
 .home-sponsors-heart-3.build-in-animate {
-    animation: 6s cubic-bezier(0.535, 0.15, 0.425, 1) -2s:local(home-sponsors-heart-3) infinite
+    animation: 6s cubic-bezier(0.535, 0.15, 0.425, 1) -2s local(home-sponsors-heart-3) infinite
 }
 
 @keyframes home-community-cards-1 {
@@ -121989,7 +121989,6 @@ strong {
     transition: color var(--global-transition);
     color: hsl(var(--t-color-one));
     font-family: var(--headings-font-family);
-    font-weight: 700;
 }
 
 h1,
@@ -126190,11 +126189,13 @@ html[dir="rtl"] .contact__form .phone-number .prefix-icon {
 .h0-mktg {
     font-size: 80px !important;
     line-height: 110px !important;
+    font-weight: 400 !important;
 }
 
 
 a.btn-mktg.home-campaign-enterprise.btn-muted-mktg {
     color: white !important;
+    font-weight: inherit;
 }
 
 ;
@@ -126219,3 +126220,5 @@ div#productivity {
 
 
 /* asdfghjkl */
+
+
