@@ -98880,7 +98880,7 @@ button {
     --bg-color-one: var(--light-h), var(--light-s), calc(var(--light-l) - 10%);
     --bg-color-two: var(--light-color);
     --bg-color-reverse: var(--dark-color);
-    --inputs-bg-color: var(--light-h), var(--light-s), calc(var(--light-l) - 7%);
+    --inputs-bg-color:#0A0A0A;
     --t-color-one: var(--dark-color);
     --t-color-two: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 25%);
     --border-color: var(--light-h), var(--light-s), calc(var(--light-l) - 4%);
@@ -115272,7 +115272,7 @@ Created:    02/2023
     --bg-color-one: var(--light-h), var(--light-s), calc(var(--light-l) - 10%);
     --bg-color-two: var(--light-color);
     --bg-color-reverse: var(--dark-color);
-    --inputs-bg-color: var(--light-h), var(--light-s), calc(var(--light-l) - 7%);
+    --inputs-bg-color:#0A0A0A;
     --t-color-one: var(--dark-color);
     --t-color-two: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 25%);
     --border-color: var(--light-h), var(--light-s), calc(var(--light-l) - 4%);
@@ -121346,7 +121346,7 @@ li.portfolio__loadMore {
     --bg-color-one: var(--light-h), var(--light-s), calc(var(--light-l) - 10%);
     --bg-color-two: var(--light-color);
     --bg-color-reverse: var(--dark-color);
-    --inputs-bg-color: var(--light-h), var(--light-s), calc(var(--light-l) - 7%);
+    --inputs-bg-color:#0A0A0A;
     --t-color-one: var(--dark-color);
     --t-color-two: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 25%);
     --border-color: var(--light-h), var(--light-s), calc(var(--light-l) - 4%);
@@ -125979,7 +125979,6 @@ html[dir="rtl"] .contact__social {
 }
 
 .contact__form {
-    background-color: hsl(var(--bg-color-two));
     margin: auto;
     border-radius: var(--radius-size);
     -webkit-box-shadow: var(--card-shadow);
