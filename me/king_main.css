@@ -103463,7 +103463,6 @@ html[dir="rtl"] .portfolio__filters__item:not(:last-of-type)::after {
 
 .contact__info__item__icon {
     width: 1.5rem;
-    color: hsl(var(--t-color-one));
     -webkit-transition: color var(--global-transition);
     transition: color var(--global-transition);
 }
@@ -119869,7 +119868,6 @@ html[dir="rtl"] .portfolio__filters__item:not(:last-of-type)::after {
 
 .contact__info__item__icon {
     width: 1.5rem;
-    color: hsl(var(--t-color-one));
     -webkit-transition: color var(--global-transition);
     transition: color var(--global-transition);
 }
@@ -121926,7 +121924,6 @@ label,
 strong {
     -webkit-transition: color var(--global-transition);
     transition: color var(--global-transition);
-    color: hsl(var(--t-color-one));
     font-family: var(--headings-font-family);
 }
 
@@ -125895,7 +125892,6 @@ html[dir="rtl"] .portfolio__filters__item:not(:last-of-type)::after {
 
 .contact__info__item__icon {
     width: 1.5rem;
-    color: hsl(var(--t-color-one));
     -webkit-transition: color var(--global-transition);
     transition: color var(--global-transition);
 }
