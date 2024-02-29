@@ -101053,7 +101053,6 @@ html[dir="rtl"] .form-styled .group .control.has-prefix-icon .prefix-icon {
     background-color: hsl(var(--inputs-bg-color));
     padding-left: 0.875rem;
     padding-right: 0.875rem;
-    border: 0.0625rem solid;
     outline: 0;
     border-radius: 4px;
     -webkit-box-shadow: var(--inset-shadow);
