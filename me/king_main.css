@@ -103610,7 +103610,6 @@ html[dir="rtl"] .contact__social {
 }
 
 .contact__form {
-    padding: 1.5rem;
     margin: auto;
     border-radius: var(--radius-size);
 
@@ -120017,7 +120016,6 @@ html[dir="rtl"] .contact__social {
 }
 
 .contact__form {
-    padding: 1.5rem;
     margin: auto;
     border-radius: var(--radius-size);
 
@@ -126045,7 +126043,6 @@ html[dir="rtl"] .contact__social {
 
 .contact__form {
     background-color: hsl(var(--bg-color-two));
-    padding: 1.5rem;
     margin: auto;
     border-radius: var(--radius-size);
     -webkit-box-shadow: var(--card-shadow);
