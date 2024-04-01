@@ -121711,7 +121711,6 @@ body .page {
 }
 
 .section:not(.page) {
-    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
@@ -132630,11 +132629,9 @@ div#productivity {
                           -ms-flex-preferred-size: calc(33.33333% - 30px);
                           flex-basis: calc(33.33333% - 30px);
 
-                          margin: 0 15px 30px;
 
                           overflow: hidden;
 
-                          border-radius: 28px;
                         }
 
                         .ag-courses-item_link {
