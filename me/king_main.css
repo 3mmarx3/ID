@@ -120318,7 +120318,6 @@ svg#Cer {
 .title {
     text-transform: uppercase;
     font-size: 20px;
-    margin-top: 10px;
 }
 
 .rol {
@@ -121710,9 +121709,6 @@ body .page {
     outline: 0;
 }
 
-.section:not(.page) {
-    padding-bottom: 5rem;
-}
 
 .section .section-title {
     text-align: center;
@@ -127491,11 +127487,10 @@ div#productivity {
 
 
   .card {
-    border-radius: 0.8rem;
+    border-radius: 10px;
 
     list-style-type: none;
     margin-inline: auto;
-    padding: 0 0 1rem;
     display: flex;
 
   }
@@ -132636,7 +132631,7 @@ div#productivity {
 
                         .ag-courses-item_link {
                           display: block;
-                          padding: 30px 20px;
+                          padding:  20px;
                           background-color: #0A0A0A;
 
                           overflow: hidden;
