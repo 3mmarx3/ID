@@ -1,3 +1,9 @@
+
+body{
+  background-color:#f7f7f7;
+}
+
+
 :root {
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
@@ -136,11 +142,7 @@ html {
   font-family: var(--ff-poppins);
 }
 
-body {
-  background: black;
 
-  /* var(--smoky-black) */
-}
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -148,13 +150,7 @@ body {
 
 .sidebar,
 article {
-  /* background: var(--eerie-black-2); */
-  border: 1px solid var(--jet);
-  background: var(--smoky-black);
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: var(--shadow-1);
-  z-index: 1;
+color:black;
 }
 
 .separator {
@@ -310,6 +306,7 @@ main {
   max-height: 405px;
   overflow: hidden;
   transition: var(--transition-2);
+  display: none;
 }
 
 .sidebar.active {
@@ -332,7 +329,7 @@ main {
   background-image: url(/ID/ID/img/399262887_1472912256875878_7583769342947303671_n.jpg);
   background-size: cover;
   background-position: center center;
-  border: 4px solid white;
+  border: 4px solid #53b5a8;
 }
 
 .info-content .name {
@@ -394,17 +391,11 @@ main {
   visibility: visible;
 } */
 
-.contacts-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
+
 
 .contact-item {
   min-width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+ 
 }
 
 .contact-info {
@@ -413,7 +404,6 @@ main {
 }
 
 .contact-title {
-  color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
 }
@@ -468,6 +458,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .navbar-link {
@@ -1650,10 +1641,6 @@ input[type="checkbox"].chip:disabled {
 }
 
 
-
-body{
-  background: black !important;
-}
 
 
 .start{
