@@ -214,7 +214,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: var(--white-2);
+  /* color: var(--white-2); */
   text-transform: capitalize;
 }
 
@@ -462,29 +462,17 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: transparent;
   font-size: var(--fs-8);
   transition: color var(--transition-1);
   text-transform: capitalize;
+  position: absolute;
 }
 nav.navbar {
   margin-bottom: 16px;
 }
 
-.navbar-link:hover,
-.navbar-link:focus {
-  color: var(--light-gray-70);
-}
 
-/* .navbar-link.active {
-  color: white;
-  background: var(--smoky-black);
-  padding: 3px 15px;
-  border-radius: 30px;
-} */
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about .article-title {
   margin-bottom: 15px;
@@ -841,7 +829,6 @@ nav.navbar {
 }
 
 .timeline-text {
-  color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -1362,7 +1349,6 @@ input[type="checkbox"].chip {
   position: relative;
   box-sizing: border-box;
   padding: 0;
-  color: var(--light-gray);
   appearance: none !important;
   width: max-content;
   height: 40px;
