@@ -1343,7 +1343,7 @@ fieldset {
 }
 
 legend {
-  color: white;
+  color: black;
   margin: 10px;
   text-transform: capitalize;
   font-weight: 100;
