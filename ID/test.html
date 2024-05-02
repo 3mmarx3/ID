@@ -1,543 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-
 <body>
 
-  <body>
+  <canvas id=c>
 
-<div class="div_">
+
+
+  </canvas>
   
-    <nav class="nav left column">
-      <button class="secondary circle tooltip">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-          <path
-            d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
-        </svg>
-      </button>
-      <button class="secondary circle tooltip">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path
-            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
-        </svg>
-      </button>
-      <button class="secondary circle tooltip">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path
-            d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
-        </svg>
-      </button>
-      <button class="secondary circle tooltip"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path
-            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-        </svg>
-      </button>
-    </nav>
 
 
-    <main>
-      <nav class="nav top row">
-        <h5 class="center"><span>VERB</span><small class="muted">.hosting</small></h5>
-        <button class="row secondary center">
-          <!--<p class="muted">All Systems Operational</p>-->
-          <svg class="primary-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="audioIcon">
-            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31H476.3c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9v-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1v5.8c0 16.9-2.8 33.5-8.3 49.1z" />
-          </svg>
-        </button>
-      </nav>
-
-      <div class="servers column">
-
-        <style>
-          #audioIcon path {
-            fill: yellow;
-            /* تعيين لون الأيقاف الافتراضي */
-          }
-
-          #audioIcon.playing path {
-            fill: red;
-            /* تعيين لون التشغيل عند التشغيل */
-          }
-        </style>
-
-        <div class="server widget secondary row">
-          <div class="row">
-            <!-- زر التشغيل/الإيقاف الأول -->
-            <button onclick="toggleAudio('audioPlayer1', 'playIcon1', 'pauseIcon1')">
-              <span id="playIcon1" style="display: inline;">
-                <!-- SVG زر التشغيل -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
-                  </path>
-                </svg>
-              </span>
-              <span id="pauseIcon1" style="display: none;">
-                <!-- SVG زر الإيقاف -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                  <path
-                    d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z">
-                  </path>
-                </svg>
-              </span>
-            </button>
-
-            <!-- الملف الصوتي الأول -->
-            <audio id="audioPlayer1" src="/ID/ID/audio/WhatsApp Audio 2023-09-05 at 04.39.34.dat.unknown"></audio>
-
-            <div class="center">
-              <h5>Super cool server</h5>
-              <small class="muted">2/20 Players</small> <small>•</small> <small class="muted">20/20tps</small>
-            </div>
-          </div>
-
-          <svg class="center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z">
-            </path>
-          </svg>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <div class="server widget secondary row">
-          <div class="row">
-            <!-- زر التشغيل/الإيقاف -->
-            <button onclick="toggleAudio(this)">
-              <span class="playIcon" style="display: inline;">
-                <!-- SVG زر التشغيل -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
-                  </path>
-                </svg>
-              </span>
-              <span class="pauseIcon" style="display: none;">
-                <!-- SVG زر الإيقاف -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                  <path
-                    d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z">
-                  </path>
-                </svg>
-              </span>
-            </button>
-
-            <!-- الملف الصوتي -->
-            <audio src="/ID/ID/audio"></audio>
-
-            <div class="center">
-              <h5>Super cool server</h5>
-              <small class="muted">2/20 Players</small> <small>•</small> <small class="muted">20/20tps</small>
-            </div>
-          </div>
-
-          <svg class="center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z">
-            </path>
-          </svg>
-
-        </div>
-
-
-
-
-
-      </div>
-
-
-    </main>
-</div>
-  </body>
-
-
-
-
-
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Figtree:800|DM+Sans:400");
-
-    :root {
-      --text: hsla(247, 57%, 91%, 1);
-      --text_light: hsla(247, 57%, 91%, 0.9);
-      --text_dark: hsla(247, 57%, 91%, 0.5);
-      --background: rgb(20, 21, 20);
-      --background_dark: rgb(16, 16, 15);
-      --primary: #f72585;
-      --secondary: hsla(247, 8%, 25%, 0.5);
-      --accent: rgb(100, 35, 251);
-      --outline: hsla(247, 5%, 36%, 1);
-      --alert: hsla(360, 60%, 55%, 1);
-      --on: #60f79d;
-      --off: #f08080;
-    }
-
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: "Figtree";
-      font-weight: 800;
-      line-height: 1;
-      color: var(--text);
-    }
-
-    html {
-      font-size: 100%;
-    }
-
-    /* 16px */
-
-    h1 {
-      font-size: 8rem;
-    }
-
-    h2 {
-      font-size: 3.158rem;
-    }
-
-    h3 {
-      font-size: 2.369rem;
-    }
-
-    h4 {
-      font-size: 1.777rem;
-    }
-
-    h5 {
-      font-size: 1.333rem;
-      color: var(--text_light);
-      line-height: 1.5rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-    }
-
-    span {
-      color: var(--text);
-    }
-
-    small {
-      font-size: 0.75rem;
-      color: var(--text);
-    }
-
-    .div_ {
-      display: flex;
-      flex-direction: row;
-      overflow-x: hidden;
-      padding: 2rem 20vw 2rem 20vw;
-      gap: 2rem;
-      font-family: "DM Sans";
-      font-weight: 400;
-      color: var(--text);
-      background: linear-gradient(267deg,
-          var(--background_dark),
-          var(--background));
-    }
-
- 
-    svg {
-      fill: var(--text_dark);
-      height: 1lh;
-      width: 1lh;
-    }
-
-    notification {
-      position: absolute;
-      top: -5%;
-      right: -5%;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    notification p {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-    }
-
-    button {
-      color: var(--text);
-      padding: 0.9rem 1rem 0.9rem 1rem;
-      border-radius: 0.5rem;
-      border: none;
-      background: linear-gradient(267deg,
-          var(--background_dark),
-          var(--background));
-      font-size: 1rem;
-      border-radius: 50%;
-    }
-
-    button,
-    a {
-      cursor: pointer;
-    }
-
-    .circle {
-      position: relative;
-      padding: 0;
-      border-radius: 100%;
-      height: 3rem;
-      width: 3rem;
-    }
-
-    .circle svg {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-    }
-
-    .split {
-      width: 50%;
-    }
-
-    .center {
-      align-items: center;
-      align-self: center;
-    }
-
-    .column {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .row {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-    }
-
-    .server {
-      justify-content: space-between;
-    }
-
-    .widget {
-      display: flex;
-      position: relative;
-      padding: 2rem;
-      border-radius: 1rem;
-      width: 100%;
-      gap: 0rem;
-    }
-
-    .widget-wrapper {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-    }
-
-    div.column:nth-child(2) {
-      margin-top: 0rem;
-    }
-
-    glob {
-      opacity: 30%;
-      position: absolute;
-      width: 20rem;
-      height: 20rem;
-      border-radius: 100%;
-      filter: blur(100px);
-      background: var(--primary);
-      pointer-events: none;
-    }
-
-    /*Footer & Nav*/
-    .footer,
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(10px);
-    }
-
-    .nav.left {
-      height: 100%;
-      position: sticky;
-    }
-
-    .nav.top {
-      z-index: 1;
-    }
-
-    /*Decoration*/
-
-    .primary-fill {
-      fill: var(--primary);
-    }
-
-    .primary {
-      background: linear-gradient(114deg, var(--primary), var(--accent));
-    }
-
-    .secondary {
-      background: var(--secondary);
-    }
-
-    .muted {
-      color: var(--text_dark);
-    }
-
-    .bold {
-      font-weight: 700;
-    }
-
-    .underline {
-      text-decoration: underline;
-    }
-
-    .alert {
-      background: var(--alert);
-    }
-
-    .active {
-      color: var(--primary);
-    }
-
-    .on {
-      fill: var(--on);
-      filter: drop-shadow(0px 0px 10px 0px var(--on));
-    }
-
-    .off {
-      fill: var(--text_dark);
-      filter: drop-shadow(0px 0px 10px 0px var(--off));
-    }
-
-    /*Tooltips*/
-    .tooltip {
-      position: relative;
-      display: inline-block;
-    }
-
-    .tooltip .tooltip-text {
-      visibility: hidden;
-      background: var(--background_dark);
-      color: var(--text_light);
-      text-wrap: nowrap;
-      border-radius: 0.5rem;
-      padding: 0.75rem;
-      position: absolute;
-      z-index: 100;
-      top: 5%;
-      left: 115%;
-    }
-
-    .tooltip .tooltip-text::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 100%;
-      margin-top: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: transparent var(--background_dark) transparent transparent;
-    }
-
-    .tooltip:hover .tooltip-text {
-      visibility: visible;
-    }
-
-    /*Scroll*/
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
-    /*Screen*/
-    @media only screen and (max-width: 800px) {
-      body {
-        padding: 2rem;
+<style>
+  /* latin-ext */
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v9/u-450q2lgwslOqpF_6gQ8kELaw9pWt_-.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v9/u-450q2lgwslOqpF_6gQ8kELawFpWg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#c{
+  background:#000;
+  position: relative;
+  
+  
+}
+</style>
+
+<script>
+  c = document.querySelector('#c')
+icw=c.width = 1920
+ich=c.height = 200
+x = c.getContext('2d')
+C = Math.cos
+S = Math.sin
+t = 0
+T = Math.tan
+
+rsz=window.onresize=()=>{
+  setTimeout(()=>{
+      c.style.width = 'calc(100% - 40px)'
+      setTimeout(()=>c.style.height = c.clientWidth*(ich/icw) + 'px',0)
+  },0)
+}
+rsz()
+
+async function Draw(){
+  oX=oY=oZ=0
+  if(!t){
+    R=R2=(Rl,Pt,Yw,m)=>{
+      M=Math
+      A=M.atan2
+      H=M.hypot
+      X=S(p=A(X,Z)+Yw)*(d=H(X,Z))
+      Z=C(p)*d
+      Y=S(p=A(Y,Z)+Pt)*(d=H(Y,Z))
+      Z=C(p)*d
+      X=S(p=A(X,Y)+Rl)*(d=H(X,Y))
+      Y=C(p)*d
+      if(m){
+        X+=oX
+        Y+=oY
+        Z+=oZ
       }
     }
-  </style>
+    Q=()=>[c.width/2+X/Z*900,c.height/2+Y/Z*900]
 
+    Rn = Math.random
 
+    stroke = (scol, fcol, lwo=1, od=true, oga=1) => {
+      if(scol){
+        //x.closePath()
+        if(od) x.globalAlpha = .2*oga
+        x.strokeStyle = scol
+        x.lineWidth = Math.min(1000,100*lwo/Z)
+        if(od) x.stroke()
+        x.lineWidth /= 4
+        x.globalAlpha = 1*oga
+        x.stroke()
+      }
+      if(fcol){
+        x.globalAlpha = 1*oga
+        x.fillStyle = fcol
+        x.fill()
+      }
+    }
 
+    G_ = 100000, iSTc = 1e4
+    ST = Array(iSTc).fill().map(v=>{
+      X = (Rn()-.5)*G_
+      Y = (Rn()-.5)*G_
+      Z = (Rn()-.5)*G_
+      return [X,Y,Z]
+    })
 
+    burst = new Image()
+    burst.src = "https://srmcgann.github.io/temp/burst.png"
 
+    starsLoaded = false, starImgs = [{loaded: false}]
+    starImgs = Array(9).fill().map((v,i) => {
+      let a = {img: new Image(), loaded: false}
+      a.img.onload = () => {
+        a.loaded = true
+        setTimeout(()=>{
+          if(starImgs.filter(v=>v.loaded).length == 9) starsLoaded = true
+        }, 0)
+      }
+      a.img.src = `https://srmcgann.github.io/stars/star${i+1}.png`
+      return a
+    })
 
-  <script>
-    function toggleAudio(audioId, playIconId, pauseIconId) {
-      var audioPlayer = document.getElementById(audioId);
-      var playIcon = document.getElementById(playIconId);
-      var pauseIcon = document.getElementById(pauseIconId);
-      var audioIcon = document.getElementById("audioIcon");
+    showstars = false
+    
+    progress = []
+    spawnProgress = () => {
+      let obj = {
+        X: 0,
+        Y: 0,
+        Z: 0,
+        theta: 0,
+      }
+      progress = [...progress, obj]
+    }
+    fs = pct = 0
+  }
 
-      // إيقاف أي ملف صوتي آخر قيد التشغيل
-      var allAudioPlayers = document.querySelectorAll('audio');
-      allAudioPlayers.forEach(function (player) {
-        if (player.id !== audioId && !player.paused) {
-          player.pause();
-          player.currentTime = 0; // إعادة تشغيل الملف الصوتي من البداية
-          var playIconOther = document.getElementById('playIcon' + player.id.slice(-1));
-          var pauseIconOther = document.getElementById('pauseIcon' + player.id.slice(-1));
-          playIconOther.style.display = "inline";
-          pauseIconOther.style.display = "none";
+  oX=0, oY=0, oZ=28
+  Rl=0, Pt=0, Yw=0//pct<1?0:Yw+C(t*2)/10
+
+  x.globalAlpha = 1
+  x.fillStyle='#000f'
+  x.fillRect(0,0,c.width,c.height)
+  x.lineJoin = x.lineCap = 'round'
+
+  if(showstars) ST.map(v=>{
+    X = v[0]
+    Y = v[1]
+    Z = v[2]
+    R(Rl,Pt,Yw,1)
+    if(Z>0){
+      if((x.globalAlpha = Math.min(1,(Z/5e3)**2))>.1){
+        s = Math.min(1e3, 4e5/Z)
+        x.fillStyle = '#ffffff04'
+        l = Q()
+        x.fillRect(l[0]-s/2,l[1]-s/2,s,s)
+        s/=5
+        x.fillStyle = '#fffa'
+        x.fillRect(l[0]-s/2,l[1]-s/2,s,s)
+      }
+    }
+  })
+
+  x.globalAlpha = 1
+
+  pct = Math.min(1,t/4%2);
+  x.textAlign = 'left'
+  for(j=0;j<99*pct|0;j++){
+    sd = 1
+    w = 1
+    sp = .5
+    tx = (j-50) * sp + (-w/2+.5) * sp - 3.5
+    ty = -1
+    tz = 0
+    ls1 = sp*2
+    r = 16
+    q2 = Math.PI * 2 / r * j
+    for(m=2;m--;) {
+      x.beginPath()
+      q = (pct<1?t*8:t)+(m?Math.PI:0)
+      for(i=sd; i--;){
+        X = tx + w/sd*i*sp
+        Y = ty + S(p=Math.PI*2/sd*i/r + q + q2)*ls1
+        Z = tz + C(p)*ls1
+        R(Rl,Pt,Yw,1)
+        if(Z>0) x.lineTo(...Q())
+        X = tx + w/sd*(i+1)*sp
+        Y = ty + S(p=Math.PI*2/sd*(i+1)/r + q + q2)*ls1
+        Z = tz + C(p)*ls1
+        R(Rl,Pt,Yw,1)
+        if(Z>0){
+          if(m){
+            l1 = Q()
+            x.lineTo(...l1)
+          }else{
+            l2 = Q()
+            x.lineTo(...l2)
+          }
         }
-      });
-
-      // تبديل تشغيل/إيقاف الملف الصوتي المُحدد
-      if (audioPlayer.paused) {
-        audioPlayer.play();
-        playIcon.style.display = "none";
-        pauseIcon.style.display = "inline";
-        audioIcon.classList.add("playing");
-      } else {
-        audioPlayer.pause();
-        playIcon.style.display = "inline";
-        pauseIcon.style.display = "none";
-        audioIcon.classList.remove("playing");
       }
+      col1 = `hsla(${pct<1?m*180:120},99%,50%,.7)`
+      stroke(col1,'', 4, true)
     }
-
-  </script>
-
-
-
-
-
-
-
-
-
-
+    if(typeof ipx == 'undefined') ipx = (l1[0]+l2[0])/2
+  }
+  if(typeof l1 != 'undefined'){
+    x.font = (fs = 85) + "px Courier Prime"
+    x.fillStyle = '#fff'
+    ipx += (((l1[0]+l2[0])/2+fs/2) - ipx)/4
+    s = 100
+    if(pct<1){
+      x.drawImage(starImgs[6].img,l1[0]-s/2,-s/2+l1[1],s,s)      
+      x.drawImage(starImgs[1].img,l2[0]-s/2,-s/2+l2[1],s,s)      
+    }else{
+      x.drawImage(starImgs[4].img,l1[0]-s/2,-s/2+l1[1],s,s)
+      x.drawImage(starImgs[4].img,l2[0]-s/2,-s/2+l2[1],s,s)
+    }
+    x.fillText((Math.round(pct*100)/1) + '%', ipx+fs*.25, c.height/2 - fs/16)
+  }
+  
+  filename = ""
+  x.fillStyle = '#8888'
+  x.textAlign = 'center'
+  x.fillText(filename,c.width/2,c.height/2+fs)
+  t+=1/60
+  requestAnimationFrame(Draw)
+}
+Draw()
+</script>
 
 </body>
-
 </html>

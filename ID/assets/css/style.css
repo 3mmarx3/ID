@@ -228,6 +228,17 @@ color:black;
   --ionicon-stroke-width: 35px;
 }
 
+svg.bi.bi-play-circle,svg.bi.bi-pause-circle {
+  width: 1.5lh;
+  height: 1.5lh;
+}
+
+
+p.contact-link {
+  color: white;
+  font-size: larger;
+}
+
 article {
   display: none;
 }
