@@ -14,6 +14,25 @@
   --off: #f08080;
 }
 
+
+
+:root {
+  --text: hsla(247, 57%, 91%, 1);
+  --text_light: hsla(247, 57%, 91%, 0.9);
+  --text_dark: hsla(247, 57%, 91%, 0.5);
+  --background: rgb(20, 21, 20);
+  --background_dark: rgb(16, 16, 15);
+  --primary: #f72585;
+  --secondary: hsla(247, 8%, 25%, 0.5);
+  --accent: rgb(100, 35, 251);
+  --outline: hsla(247, 5%, 36%, 1);
+  --alert: hsla(360, 60%, 55%, 1);
+  --on: #60f79d;
+  --off: #f08080;
+}
+
+
+
 body{
   background-color:#F7F7F7;
 }
@@ -849,6 +868,7 @@ nav.navbar {
 .timeline-text {
   font-weight: var(--fw-300);
   line-height: 1.6;
+  color: white;
 }
 
 /**
@@ -1348,7 +1368,7 @@ fieldset {
 }
 
 legend {
-  color: black;
+  color: white;
   margin: 10px;
   text-transform: capitalize;
   font-weight: 100;
@@ -1380,6 +1400,7 @@ input[type="checkbox"].chip::after {
   position: relative;
   padding: 10px 15px 10px 30px;
   display: block;
+  color: white
 }
 
 input[type="checkbox"].chip::before {
