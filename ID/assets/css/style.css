@@ -235,7 +235,8 @@ article {
 article.active {
   display: block;
   animation: fade 0.5s ease backwards;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 20vh;
 }
 
 @keyframes fade {
@@ -1130,6 +1131,11 @@ li.blog-post-item {
   object-fit: cover;
   transition: var(--transition-1);
 }
+button, a {
+  cursor: pointer;
+  color: black;
+}
+
 
 .blog-post-item > a:hover .blog-banner-box img {
   transform: scale(1.1);
@@ -1137,6 +1143,10 @@ li.blog-post-item {
 
 .blog-content {
   padding: 15px;
+  background: linear-gradient(267deg,
+  var(--background_dark),
+  var(--background));
+  border-radius: 10px;
 }
 
 .blog-meta {
