@@ -129,17 +129,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-
-// audio
-
-var audioPlayers = document.querySelectorAll('.audioPlayer');
-
-audioPlayers.forEach(function (player) {
-  player.addEventListener('play', function () {
-    audioPlayers.forEach(function (otherPlayer) {
-      if (otherPlayer !== player) {
-        otherPlayer.pause();
-      }
-    });
-  });
-});

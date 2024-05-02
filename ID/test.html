@@ -10,8 +10,9 @@
 <body>
 
   <body>
- 
 
+<div class="div_">
+  
     <nav class="nav left column">
       <button class="secondary circle tooltip">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -39,14 +40,14 @@
         </svg>
       </button>
     </nav>
-  
-  
+
+
     <main>
       <nav class="nav top row">
         <h5 class="center"><span>VERB</span><small class="muted">.hosting</small></h5>
         <button class="row secondary center">
           <!--<p class="muted">All Systems Operational</p>-->
-          <svg class="primary-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <svg class="primary-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="audioIcon">
             <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
             <path
               d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31H476.3c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9v-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1v5.8c0 16.9-2.8 33.5-8.3 49.1z" />
@@ -55,51 +56,58 @@
       </nav>
 
       <div class="servers column">
-     
-          <style>
-            #audioIcon path {
-              fill: yellow; /* تعيين لون الأيقاف الافتراضي */
-            }
-            #audioIcon.playing path {
-              fill: red; /* تعيين لون التشغيل عند التشغيل */
-            }
-          </style>
-      
-          <div class="server widget secondary row">
-            <div class="row">
-              <!-- زر التشغيل/الإيقاف الأول -->
-              <button onclick="toggleAudio('audioPlayer1', 'playIcon1', 'pauseIcon1')">
-                <span id="playIcon1" style="display: inline;">
-                  <!-- SVG زر التشغيل -->
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path>
-                  </svg>
-                </span>
-                <span id="pauseIcon1" style="display: none;">
-                  <!-- SVG زر الإيقاف -->
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path>
-                  </svg>
-                </span>
-              </button>
-        
-              <!-- الملف الصوتي الأول -->
-              <audio id="audioPlayer1" src="/ID/ID/audio/WhatsApp Audio 2023-09-05 at 04.39.34.dat.unknown"></audio>
-        
-              <div class="center">
-                <h5>Super cool server</h5>
-                <small class="muted">2/20 Players</small> <small>•</small> <small class="muted">20/20tps</small>
-              </div>
+
+        <style>
+          #audioIcon path {
+            fill: yellow;
+            /* تعيين لون الأيقاف الافتراضي */
+          }
+
+          #audioIcon.playing path {
+            fill: red;
+            /* تعيين لون التشغيل عند التشغيل */
+          }
+        </style>
+
+        <div class="server widget secondary row">
+          <div class="row">
+            <!-- زر التشغيل/الإيقاف الأول -->
+            <button onclick="toggleAudio('audioPlayer1', 'playIcon1', 'pauseIcon1')">
+              <span id="playIcon1" style="display: inline;">
+                <!-- SVG زر التشغيل -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+                  </path>
+                </svg>
+              </span>
+              <span id="pauseIcon1" style="display: none;">
+                <!-- SVG زر الإيقاف -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z">
+                  </path>
+                </svg>
+              </span>
+            </button>
+
+            <!-- الملف الصوتي الأول -->
+            <audio id="audioPlayer1" src="/ID/ID/audio/WhatsApp Audio 2023-09-05 at 04.39.34.dat.unknown"></audio>
+
+            <div class="center">
+              <h5>Super cool server</h5>
+              <small class="muted">2/20 Players</small> <small>•</small> <small class="muted">20/20tps</small>
             </div>
-        
-            <svg class="center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" id="audioIcon">
-              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path d="M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z"></path>
-            </svg>
-        
           </div>
-        
-      
+
+          <svg class="center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z">
+            </path>
+          </svg>
+
+        </div>
 
 
 
@@ -111,40 +119,45 @@
 
 
 
+        <div class="server widget secondary row">
+          <div class="row">
+            <!-- زر التشغيل/الإيقاف -->
+            <button onclick="toggleAudio(this)">
+              <span class="playIcon" style="display: inline;">
+                <!-- SVG زر التشغيل -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+                  </path>
+                </svg>
+              </span>
+              <span class="pauseIcon" style="display: none;">
+                <!-- SVG زر الإيقاف -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z">
+                  </path>
+                </svg>
+              </span>
+            </button>
 
-          <div class="server widget secondary row">
-            <div class="row">
-              <!-- زر التشغيل/الإيقاف الأول -->
-              <button onclick="toggleAudio('audioPlayer2', 'playIcon2', 'pauseIcon2')">
-                <span id="playIcon2" style="display: inline;">
-                  <!-- SVG زر التشغيل -->
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path>
-                  </svg>
-                </span>
-                <span id="pauseIcon2" style="display: none;">
-                  <!-- SVG زر الإيقاف -->
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path>
-                  </svg>
-                </span>
-              </button>
-        
-              <!-- الملف الصوتي الأول -->
-              <audio id="audioPlayer2" src="/ID/ID/audio/WhatsApp Audio 2023-09-05 at 04.39.34.dat.unknown"></audio>
-        
-              <div class="center">
-                <h5>Super cool server</h5>
-                <small class="muted">2/20 Players</small> <small>•</small> <small class="muted">20/20tps</small>
-              </div>
+            <!-- الملف الصوتي -->
+            <audio src="/ID/ID/audio"></audio>
+
+            <div class="center">
+              <h5>Super cool server</h5>
+              <small class="muted">2/20 Players</small> <small>•</small> <small class="muted">20/20tps</small>
             </div>
-        
-            <svg class="center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" id="audioIcon">
-              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path d="M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z"></path>
-            </svg>
-        
           </div>
+
+          <svg class="center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z">
+            </path>
+          </svg>
+
+        </div>
 
 
 
@@ -154,12 +167,13 @@
 
 
     </main>
+</div>
   </body>
 
 
-  
-    
-  
+
+
+
   <style>
     @import url("https://fonts.googleapis.com/css?family=Figtree:800|DM+Sans:400");
 
@@ -236,7 +250,7 @@
       color: var(--text);
     }
 
-    body {
+    .div_ {
       display: flex;
       flex-direction: row;
       overflow-x: hidden;
@@ -250,14 +264,7 @@
           var(--background));
     }
 
-    main {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
+ 
     svg {
       fill: var(--text_dark);
       height: 1lh;
@@ -485,26 +492,41 @@
 
 
 
-<script>
-  function toggleAudio(audioId, playIconId, pauseIconId) {
-    var audioPlayer = document.getElementById(audioId);
-    var playIcon = document.getElementById(playIconId);
-    var pauseIcon = document.getElementById(pauseIconId);
-    var audioIcon = document.getElementById("audioIcon");
+  <script>
+    function toggleAudio(audioId, playIconId, pauseIconId) {
+      var audioPlayer = document.getElementById(audioId);
+      var playIcon = document.getElementById(playIconId);
+      var pauseIcon = document.getElementById(pauseIconId);
+      var audioIcon = document.getElementById("audioIcon");
 
-    if (audioPlayer.paused) {
-      audioPlayer.play();
-      playIcon.style.display = "none";
-      pauseIcon.style.display = "inline";
-      audioIcon.classList.add("playing"); /* إضافة الكلاس "playing" لتغيير لون الأيقونة */
-    } else {
-      audioPlayer.pause();
-      playIcon.style.display = "inline";
-      pauseIcon.style.display = "none";
-      audioIcon.classList.remove("playing"); /* إزالة الكلاس "playing" لاستعادة اللون الافتراضي */
+      // إيقاف أي ملف صوتي آخر قيد التشغيل
+      var allAudioPlayers = document.querySelectorAll('audio');
+      allAudioPlayers.forEach(function (player) {
+        if (player.id !== audioId && !player.paused) {
+          player.pause();
+          player.currentTime = 0; // إعادة تشغيل الملف الصوتي من البداية
+          var playIconOther = document.getElementById('playIcon' + player.id.slice(-1));
+          var pauseIconOther = document.getElementById('pauseIcon' + player.id.slice(-1));
+          playIconOther.style.display = "inline";
+          pauseIconOther.style.display = "none";
+        }
+      });
+
+      // تبديل تشغيل/إيقاف الملف الصوتي المُحدد
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "inline";
+        audioIcon.classList.add("playing");
+      } else {
+        audioPlayer.pause();
+        playIcon.style.display = "inline";
+        pauseIcon.style.display = "none";
+        audioIcon.classList.remove("playing");
+      }
     }
-  }
-</script>
+
+  </script>
 
 
 
@@ -515,7 +537,7 @@
 
 
 
-  
+
 </body>
 
 </html>
