@@ -523,56 +523,6 @@
 
 
 
-                                            <div class="server widget secondary row">
-                                                <div class="row">
-                                                    <!-- زر التشغيل/الإيقاف الأول -->
-                                                    <button
-                                                        onclick="toggleAudio('audioPlayer2', 'playIcon2', 'pauseIcon2')">
-                                                        <span id="playIcon2" style="display: inline;">
-                                                            <!-- SVG زر التشغيل -->
-                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 448 512">
-                                                                <path
-                                                                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
-                                                                </path>
-                                                            </svg>
-                                                        </span>
-                                                        <span id="pauseIcon2" style="display: none;">
-                                                            <!-- SVG زر الإيقاف -->
-                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 320 512">
-                                                                <path
-                                                                    d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z">
-                                                                </path>
-                                                            </svg>
-                                                        </span>
-                                                    </button>
-
-                                                    <!-- الملف الصوتي الأول -->
-                                                    <audio id="audioPlayer2"
-                                                        src="/ID/ID/audio/WhatsApp Audio 2023-09-05 at 04.47.19.dat.unknown"></audio>
-
-                                                    <div class="center">
-                                                        <h5>Super cool server</h5>
-                                                        <small class="muted">2/20 Players</small> <small>•</small>
-                                                        <small class="muted">20/20tps</small>
-                                                    </div>
-                                                </div>
-
-                                                <svg class="center" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 640 512">
-                                                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                                    <path
-                                                        d="M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z">
-                                                    </path>
-                                                </svg>
-
-                                            </div>
-
-
-
-
-
 
                                         </div>
 
@@ -1427,7 +1377,9 @@
 
                 </div>
             </div>
-            <div class="drawer" id="drawer">
+            <div class="drawer_" id="drawer">
+</div>
+            <div class="drawer">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-house" viewBox="0 0 16 16">
@@ -1802,14 +1754,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: white;
+        background:linear-gradient(267deg,
+                var(--background_dark),
+                var(--background)) ;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.0);
         border-radius: 5px;
         margin-bottom: 20px;
     }
 
     .transaction svg {
-        fill: black !important;
+        fill: white !important;
         width: 2em !important;
         height: 2em !important;
     }
@@ -1829,7 +1783,7 @@
         text-align: left;
         flex-grow: 1;
         font-size: 0.8rem;
-        font-weight: bold;
+color: white;
         margin-bottom: 5px;
     }
 
@@ -1839,6 +1793,9 @@
         font-weight: 300;
         letter-spacing: 1px;
     }
+
+    .t-time a {
+    color: white;}
 
     .t-amount {
         font-size: 0.6rem;
@@ -1866,6 +1823,18 @@
         z-index: 5;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    .drawer_{
+        background: linear-gradient(267deg,
+                var(--background_dark),
+                var(--background));
+        height: 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+       
+        z-index: 5;
     }
 
 
@@ -2279,10 +2248,10 @@
     let drawer = document.getElementById('drawer');
 
     _top.onclick = function () {
-        if (drawer.style.height === '95vh') {
-            drawer.style.height = '80px'; // أو يمكنك استخدام الارتفاع الافتراضي هنا
+        if (drawer.style.height === '100vh') {
+            drawer.style.height = '0'; // أو يمكنك استخدام الارتفاع الافتراضي هنا
         } else {
-            drawer.style.height = '95vh';
+            drawer.style.height = '100vh';
         }
     }
 </script>
