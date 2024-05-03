@@ -519,6 +519,15 @@ audio#audioPlayer1 {
   transition: color var(--transition-1);
   text-transform: capitalize;
   position: absolute;
+  font-size: var(--fs-8);
+    transition: color var(--transition-1);
+    text-transform: capitalize;
+    position: absolute;
+    padding: 50px;
+    z-index: 999;
+    margin: 0;
+    top: 0;
+    left: 0;
 }
 nav.navbar {
   margin-bottom: 16px;
