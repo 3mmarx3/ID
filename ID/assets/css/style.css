@@ -1759,6 +1759,9 @@ background: #e8e8e8;
 transition: width 0.5s ease-out, left 0.3s ease-out;
 }
 
+
+
+
 .fancy .bottom-key-1 {
 height: 2px;
 width: 1.5625rem;
@@ -1809,4 +1812,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-top: 8vh;
+}
+.primary {
+  background: linear-gradient(114deg, var(--primary), var(--accent));
 }
