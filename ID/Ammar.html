@@ -10,7 +10,6 @@
         content="Ammar develops the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.">
     <meta name="keywords"
         content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, responsive, sass">
-    <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2053,60 +2052,7 @@
                 
                 
 
-
-                  <button class="view-modal">View Modal</button>
-                  <div class="popup">
-                    <header>
-                      <span>Share Modal</span>
-                      <div class="close"><i class="uil uil-times"></i></div>
-                    </header>
-                    <div class="_content">
-                      <p>Share this link via</p>
-                      <ul class="icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                      </ul>
-                      <p>Or copy link</p>
-                      <div class="field">
-                        <i class="url-icon uil uil-link"></i>
-                        <input type="text" readonly value="example.com/share-link">
-                        <button>Copy</button>
-                      </div>
-                    </div>
-                  </div>
-                
-                  <script>
-                    const viewBtn = document.querySelector(".view-modal"),
-                    popup = document.querySelector(".popup"),
-                    close = popup.querySelector(".close"),
-                    field = popup.querySelector(".field"),
-                    input = field.querySelector("input"),
-                    copy = field.querySelector("button");
-                
-                    viewBtn.onclick = ()=>{
-                      popup.classList.toggle("show");
-                    }
-                    close.onclick = ()=>{
-                      viewBtn.click();
-                    }
-                
-                    copy.onclick = ()=>{
-                      input.select(); //select input value
-                      if(document.execCommand("copy")){ //if the selected text copy
-                        field.classList.add("active");
-                        copy.innerText = "Copied";
-                        setTimeout(()=>{
-                          window.getSelection().removeAllRanges(); //remove selection from document
-                          field.classList.remove("active");
-                          copy.innerText = "Copy";
-                        }, 3000);
-                      }
-                    }
-                  </script>
-                
+<!-- 2222222222222222222 -->
           
 
 </div>
