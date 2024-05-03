@@ -2836,7 +2836,7 @@
 
 
 
-                <div class="buttons menu-btn" id="_top">
+                <div class="buttons menu-btn" id="_top" onclick="Fullscreen()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" 
                         class="bi bi-capslock" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -3722,7 +3722,31 @@ color: white;
     }
 </style>
 
+<script >
+    /* احصل على العنصر الذي تريد عرضه في وضع الشاشة الكاملة (مثل فيديو في هذا المثال): */
+var elem = document.documentElement;
 
+/* عند تنفيذ وظيفة openFullscreen()، افتح الفيديو في وضع الشاشة الكاملة.
+يرجى ملاحظة أنه يجب علينا تضمين البادئات للمتصفحات المختلفة، لأنها لا تدعم بعد خاصية requestFullscreen */
+function Fullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* للسفاري */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* لـ IE11 */
+        elem.msRequestFullscreen();
+    }
+
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* للسفاري */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* لـ IE11 */
+        document.msExitFullscreen();
+    }
+}
+
+</script>
 
 
 </body>
