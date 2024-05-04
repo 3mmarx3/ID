@@ -1449,10 +1449,7 @@ input[type="checkbox"].chip:disabled {
   fill: currentcolor;
 }
 
-.r-4qtqp9 {
-  margin-left: 1vh;
-  margin-top: 4px;
-}
+
 
 .hidden {
   height: 5vh;
@@ -1461,7 +1458,6 @@ input[type="checkbox"].chip:disabled {
 .r-1cvl2hr {
   color: #1d9bf0;
 
-  /* color: var(--orange-yellow-crayola); */
 }
 
 .captions {
@@ -2231,6 +2227,7 @@ header .close:hover{
   outline: none;
   font-size: 15px;
   color: #fff;
+  background: no-repeat;
 
 }
 .field button{
@@ -3152,4 +3149,9 @@ color: white;
   filter: blur(100px);
   background: var(--primary);
   pointer-events: none;
+}
+
+.svg{
+  display: flex;
+  align-items: center;
 }
