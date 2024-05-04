@@ -2973,11 +2973,11 @@ color: white;
 }
 .secondary.circle::after{
     content: '';
-    width: 15px;
-    height: 15px;
-    background: greenyellow;
+    width: 12px;
+    height: 12px;
+    background: var(--accent);
     position: absolute;
-    left: 0;
+    left: -8px;
     bottom: 0;
     border-radius: 50%;
     border: 3px solid var(--background_dark);
