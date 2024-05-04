@@ -116,6 +116,7 @@
 
 body,html{
   background: linear-gradient(11deg, var(--background_dark), var(--background));
+  
 }
 
 
@@ -1665,14 +1666,14 @@ input[type="checkbox"].chip:disabled {
 .start{
   width: 100%;
   height: 100vh;
-  background: black;
+  background: linear-gradient(11deg, var(--background_dark), var(--background));
   display: grid;
   align-items: center;
   justify-content: center;
 }
 .fancy {
 background-color: transparent;
-border: 2px solid #000;
+border: 2px solid linear-gradient(11deg, var(--background_dark), var(--background));
 border-radius: 0;
 box-sizing: border-box;
 color: #fff;
@@ -1698,7 +1699,7 @@ font-size: 13px;
 content: " ";
 width: 1.5625rem;
 height: 2px;
-background: black;
+background: none ;
 top: 50%;
 left: 1.5em;
 position: absolute;
@@ -1782,9 +1783,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-top: 8vh;
-}
-.primary {
-  background: linear-gradient(114deg, var(--primary), var(--accent));
 }
 
 
@@ -1900,12 +1898,7 @@ flex-direction: column;
 gap: 2rem;
 }
 
-svg {
-fill: var(--text_dark);
-height: 1lh;
-width: 1lh;
-cursor: pointer;
-}
+
 
 notification {
 position: absolute;
@@ -2028,12 +2021,10 @@ width: 20rem;
 height: 20rem;
 border-radius: 100%;
 filter: blur(100px);
-background: var(--primary);
 pointer-events: none;
 }
 
 #glob-1 {
-background: var(--text_light);
 right: 0;
 top: 0;
 }
@@ -2049,7 +2040,6 @@ bottom: 0;
 position: sticky;
 justify-content: space-evenly;
 align-items: center;
-background: var(--primary);
 margin: 0 -1rem 0 -1rem;
 z-index: 10;
 top: 0;
@@ -2734,10 +2724,7 @@ color: white;
     }
 
 
-    .icon_ svg {
-    width: 1lh;
-    height: 1lh;
-}
+ 
 
     p {
         font-size: 0.9rem;
@@ -2759,11 +2746,6 @@ color: white;
 
     }
 
-
-    svg {
-        fill: white;
-        width: 1lh;
-    }
 
     notification {
         position: absolute;
@@ -2895,10 +2877,7 @@ color: white;
         fill: var(--primary);
     }
 
-    .primary {
-        background: linear-gradient(114deg, var(--primary), var(--accent));
-    }
-
+ 
     .secondary {
         background: var(--secondary);
     }
@@ -3161,4 +3140,16 @@ color: white;
 .loader {
   display: inline-block;
   margin: 0 16px;
+}
+
+
+.blour{
+  opacity: 30%;
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  filter: blur(100px);
+  background: var(--primary);
+  pointer-events: none;
 }
