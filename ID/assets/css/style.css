@@ -1442,7 +1442,7 @@ input[type="checkbox"].chip:disabled {
 }
 
 .r-1xvli5t {
-  height: 1em;
+  height: 1em; 
 }
 
 .r-yyyyoo {
@@ -2037,7 +2037,6 @@ position: sticky;
 justify-content: space-evenly;
 align-items: center;
 margin: 0 -1rem 0 -1rem;
-z-index: 10;
 top: 0;
 backdrop-filter: blur(10px);
 }
@@ -2846,8 +2845,8 @@ color: white;
         display: flex;
         justify-content: space-between;
         top: 0;
-        z-index: 10;
         backdrop-filter: blur(10px);
+        margin: 10px;
     }
 
     .nav.left {
