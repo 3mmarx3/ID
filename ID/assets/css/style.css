@@ -2090,25 +2090,11 @@ button{
 text-align: center;
 }
 .popup{
-  background: var(--secondary);
-  padding: 25px;
-  border-radius: 15px;
-  top: -150%;
-  opacity: 0;
-  pointer-events: none;
+ 
   color: white;
 
 }
-.popup.show{
-  top: 50%;
-  opacity: 1;
-  pointer-events: auto;
-  transition: top 0s 0s ease-in-out,
-              opacity 0.2s 0s ease-in-out,
-              transform 0.2s 0s ease-in-out;
-              margin-top: 3vh;
 
-}
 .popup :is(header, .icons, .field){
   display: flex;
   align-items: center;
@@ -2961,6 +2947,7 @@ color: white;
 
     #drawer {
       transition: height 0.3s ease;
+      overflow: hidden;
   }
 
   .secondary.circle {
@@ -3153,4 +3140,16 @@ color: white;
 .svg{
   display: flex;
   align-items: center;
+}
+
+button._top {
+  position: fixed;
+  z-index: 9999999999999;
+  background: var(--accent);
+  border-radius: 50%;
+  right: 25px;
+  bottom: 25px;
+ 
+  cursor: pointer;
+  padding: 25px;
 }
