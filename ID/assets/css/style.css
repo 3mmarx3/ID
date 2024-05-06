@@ -3161,6 +3161,7 @@ button._top {
 .demo > h3{
   text-align: center;
   margin: 20px 0;
+  font-size: large;
 
 }
 
@@ -3318,3 +3319,22 @@ footer{
 .snapchat .icon i{font-size:24px;text-shadow: -1px 0 black,0 -1px black, 1px 0 black, 0 1px black}
 
 .snapchat .action-btn{text-shadow: 0 0 1px black}
+
+.wrapper .row {
+  color: black !important;
+}
+
+.wrapper .row  div .svg{
+  color: black !important;
+}
+
+
+
+
+.social-counter {
+  padding: 10px;
+  display: block;
+  overflow: auto;
+  height: 100vh;
+  padding-bottom: 30vh;
+}
