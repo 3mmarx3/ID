@@ -2587,6 +2587,8 @@ color: white;
         justify-content: space-evenly;
         align-items: center;
         position: fixed;
+        z-index: 99999999999999999999999999999999999999999999999;
+
     }
 
     .drawer_{
@@ -2596,7 +2598,6 @@ color: white;
         bottom: 0;
         width: 100%;
        
-        z-index: 5;
     }
 
 
