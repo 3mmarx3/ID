@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Ammar Ahmed</title>
     <meta name="description"
         content="Ammar develops the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.">
@@ -1811,8 +1812,8 @@
                                       <br>
                                       <p class="muted">We're moving classes to A1436 bc the wall has gone missing. Idek where it went tbh</p>
                                       <br>
-                                      <small>Jan 2, 2024 at 5:23pm</small>
-                                    </div>
+<p class="dateTimeDisplay"></p>
+</div>
                                     <div class="widget secondary">
                                       <h5>May, James</h5>
                                       <small>AP Drag Racing</small>
@@ -1820,7 +1821,7 @@
                                       <p class="muted">Uhhh sooo, I may have wrecked the car we were just given <span>💀</span><span>💀</span><span>💀</span>
                                       </p>
                                       <br>
-                                      <small>Jan 1, 2024 at 2:56am</small>
+                                      <p class="dateTimeDisplay"></p>
                                     </div>
                                     <small class="center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -2927,6 +2928,49 @@ cursor: pointer;
 
 </style>
 
+<script>
+    // الحصول على التاريخ والوقت الحاليين
+    var currentDate = new Date();
+    
+    // تنسيق الشهر
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var monthIndex = currentDate.getMonth();
+    var monthName = months[monthIndex];
+    
+    // تنسيق الوقت
+    var hours = currentDate.getHours();
+    var minutes = currentDate.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // يعيد ١٢ بدلاً من ٠ عند الظهر
+    minutes = minutes < 10 ? '0' + minutes : minutes; // إضافة صفر إذا كانت الدقائق أقل من ١٠
+    
+    // تنسيق اليوم
+    var day = currentDate.getDate();
+    var year = currentDate.getFullYear();
+    
+    // إعداد الصيغة النهائية للتاريخ والوقت
+    var formattedDateTime = monthName + ' ' + day + ', ' + year + ' at ' + hours + ':' + minutes + ampm;
+    
+    // عرض التاريخ والوقت في العناصر التي تحمل الكلاس المحددة
+    var dateTimeDisplays = document.querySelectorAll('.dateTimeDisplay');
+    
+    dateTimeDisplays.forEach(function(element) {
+      element.innerHTML = '<small>' + formattedDateTime + '</small>';
+    });
+    </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+});
+</script>
 </body>
 
 </html>
