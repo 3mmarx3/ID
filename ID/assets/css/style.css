@@ -2590,6 +2590,10 @@ color: white;
         z-index: 99999999999999999999999999999999999999999999999;
 
     }
+    button._top{
+           z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999 !important;
+
+    }
 
     .drawer_{
       background: white;
@@ -3142,7 +3146,7 @@ color: white;
 
 button._top {
   position: fixed;
-  z-index: 9999999999999;
+  z-index: 999999999999999999999999999999999999999999999999999999999999;
   border-radius: 50%;
   right: 25px;
   bottom: 25px;
@@ -3339,6 +3343,9 @@ footer{
   overflow: auto;
   height: 100vh;
   padding-bottom: 15vh;
+  overflow-x: hidden;
+
+
 }
 
 .social-counter h3 {
