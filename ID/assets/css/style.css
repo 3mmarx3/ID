@@ -1575,9 +1575,7 @@ input[type="checkbox"].chip:disabled {
   fill: var(--orange-yellow-crayola);
 } */
 
-#container {
-  width: 300px;
-}
+
 
 #container.fin .path-1,
 #container.fin .path-2,
