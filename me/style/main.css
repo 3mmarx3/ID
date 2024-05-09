@@ -2321,6 +2321,10 @@ main {
  
  .about-awwwards .single-image  .overlay:nth-child(2) {
     background: linear-gradient(to bottom,hsla(220, 13%, 5%, .075) 0%, hsla(220, 13%, 5%, 0) 50%);
+    background-image: url(/ID/me/img/photo_2024-05-05_05-54-03.jpg);
+    background-position: center;background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
  }
  
  .about-awwwards .awwwards-badge {

@@ -1357,6 +1357,12 @@ section.section.work-grid.small-work-grid.grid-fade.grid-rows-part {
     padding: 0;
     height: auto;
 }
+.overlay.overlay-image {
+    background-color: #E0D9D1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 @media screen and (max-width:992px) {
