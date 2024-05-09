@@ -1134,6 +1134,13 @@ button, a {
   var(--background_dark),
   var(--background));
   border-radius: 10px;
+  text-align: left;
+}
+
+.t-desc{
+  text-align: left;
+
+
 }
 
 .blog-meta {
