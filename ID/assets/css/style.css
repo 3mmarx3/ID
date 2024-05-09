@@ -2585,7 +2585,6 @@ color: white;
         justify-content: space-evenly;
         align-items: center;
         position: fixed;
-        z-index: 99999999999999999999999999999999999999999999999;
 
     }
  
@@ -3143,6 +3142,7 @@ button._top {
   bottom: 25px;
   border: 2px solid;
   cursor: pointer;
+  background: rgb(16, 16, 15);
 }
 
 
