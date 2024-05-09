@@ -1396,3 +1396,8 @@ section.section.work-grid.small-work-grid.grid-fade.grid-rows-part {
         display: block;
     }
 }
+
+
+*{
+    text-transform: capitalize;
+}

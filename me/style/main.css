@@ -832,11 +832,7 @@ main {
     transform: translateY(-50%);
     display: inline-block;
  }
- 
- .home-header .hanger svg {
-    width: auto;
-    height: 6em;
- }
+
  
  .home-header .hanger p {
     position: absolute;
