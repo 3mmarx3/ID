@@ -1357,3 +1357,36 @@ section.section.work-grid.small-work-grid.grid-fade.grid-rows-part {
     padding: 0;
     height: auto;
 }
+
+
+@media screen and (max-width:992px) {
+    .large-work-grid .work-items .flex-col:nth-child(1) {
+        padding-left: var(--gap-padding);
+    }
+
+    .work-grid .work-items li a{
+        display: block;
+    }
+    .large-work-grid .work-items .flex-col:nth-child(2){
+        width: auto;
+    }
+
+
+    .work-grid .work-items .flex-col:nth-child(1) {
+        width: auto;
+    }
+    .work-grid .work-items .flex-col:nth-child(2) {
+        width: auto;
+        padding-top: 0;
+        padding-left: calc(var(--container-padding)* 1);
+    }
+    .work-grid .grid-sub-title {
+        display: none;
+    }
+    .work-filters .filter-row .toggle-row{
+        display: block;
+    }
+    .grid_one,.grid_tow,.row_grid,._grid_row{
+        display: block;
+    }
+}
