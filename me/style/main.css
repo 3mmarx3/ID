@@ -739,7 +739,10 @@ main {
     top: -10%;
     width: 100%;
     height: 110%;
-    background: var(--color-gray);
+    /* background: darkturquoise; */
+
+    /* background: var(--color-gray); */
+
  }
  
  .home-header .personal-image img {
@@ -840,7 +843,7 @@ main {
     transform: translateY(-50%);
     margin: 0;
     padding-right: 5em;
-    padding-left: var(--gap-padding);
+    padding-left: 20px;
     line-height: 1.2;
  }
  
@@ -858,18 +861,7 @@ main {
     display: none;
  }
  
- .home-header .hanger .digital-ball {
-    z-index: 500;
-    position: absolute;
-    right: .9em;
-    left: auto;
-    top: .9em;
-    width: 4.2em;
-    height: 4.2em;
-    transform: translate(0%, 0%);
-    background: transparent;
- }
- 
+
  .home-header .hanger .digital-ball .globe {
     width: 2.5em;
     height: 2.5em;
@@ -1378,7 +1370,7 @@ main {
  }
  
  .center-grid-btn-home {
-    padding-top: calc(var(--section-padding) / 2);
+    padding-top: 0;
     padding-bottom: 0;
  }
  
@@ -1855,18 +1847,7 @@ main {
     100% {background: var(--color-blue);}
  }
  
- .digital-ball {
-    width: clamp(9em, 12vw, 11em);
-    height: clamp(9em, 12vw, 11em);
-    background: var(--color-dark);
-    border-radius: 50%;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    overflow: hidden;
-    background: var(--color-blue);
- }
+
  
  .digital-ball .overlay {
     opacity: 0;
@@ -3578,3 +3559,11 @@ main {
     margin-right: 0;
  }
  
+ input#input {
+   width: 25px;
+   height: 25px;
+   border: none;
+   outline: none;
+   border-radius: 50%;
+   overflow: hidden;
+}

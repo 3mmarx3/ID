@@ -119,6 +119,13 @@
                                 </a>
                             </li>
                             <li class="btn btn-link">
+                                <a href="/ID/me/pages/Skils.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                                <span class="btn-text">
+                                    <span class="btn-text-inner">Skils</span>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="btn btn-link">
                                 <a href="/ID/me/pages/Contact.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                                 <span class="btn-text">
                                     <span class="btn-text-inner">Contact</span>
@@ -165,8 +172,9 @@
                     </div>
                 </div>
             </div>
+
             <div class="main-wrap" data-scroll-container><header class="section home-header theme-dark" data-scroll-section>
-   <div class="overlay personal-image no-select once-in" data-scroll data-scroll-speed="-3" data-scroll-position="top">
+   <div class="overlay personal-image no-select once-in" data-scroll data-scroll-speed="-3" data-scroll-position="top" id="div">
       <img class="_img_me" src="/ID/me/img/IMG_8661.PNG">
       <div class="big-name">
         <div class="name-h1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4" data-scroll-position="top">
@@ -179,9 +187,7 @@
    <div class="overlay get-height once-in once-in-secondary">
       <div class="hanger">
          <p><span>Located in the Egypt </span></p>
-         <?xml version="1.0" encoding="UTF-8"?>
 <svg width="300px" height="121px" viewBox="0 0 300 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Combined Shape</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(0.000000, -366.000000)" fill="#1C1D20">
             <g id="Group" transform="translate(149.816828, 426.633657) rotate(90.000000) translate(-149.816828, -426.633657) translate(89.816828, 276.816828)">
@@ -193,22 +199,14 @@
     </g>
 </svg>         <div class="digital-ball">
             <div class="overlay"></div>
-            <div class="globe">
-               <div class="globe-wrap">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle-hor"></div>
-                  <div class="circle-hor-middle"></div>
-               </div>
-            </div>
+         
          </div>
       </div>
    </div>
    <div class="nav-bar">
     <div class="credits-top">
         <div class="btn btn-link btn-left-top">
-            <a href="https://dennissnellenberg.com" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+            <a href="/ID/me/index.html" class="btn-click magnetic" data-strength="20" data-strength-text="10">
             <span class="btn-text">
                 <div class="credit"><span>©</span></div><div class="cbd"><span class="code-by">Code by </span><span class="dennis"><span class="dennis-span"> Ammar</span>  </span></span></div>
             </span>
@@ -272,6 +270,7 @@
 </svg></div>
             </div>
             <h4><span>Freelance</span> Designer & Developer</h4>
+            <input id="input" type="color" onchange="changeColor()" />
          </div>
       </div>
    </div>
@@ -459,14 +458,14 @@
                </ul>
    </div>
 </section>
-<section class="section center-grid-btn center-grid-btn-home" data-scroll-section>
+<section class=" center-grid-btn center-grid-btn-home" data-scroll-section>
    <div class="container">    
       <div class="grid-after-btn">
          <div class="btn btn-normal">
-            <a href="/ID/me/pages/work.html" class="btn-click magnetic" data-strength="25" data-strength-text="15">
+            <a href="/ID/me/pages/Work.html" class="btn-click magnetic" data-strength="25" data-strength-text="15">
                <div class="btn-fill"></div>
                <span class="btn-text">
-                  <span class="btn-text-inner change">More work<div class="count-nr">11</div></span>
+                  <span class="btn-text-inner change">More work</span>
                </span>
             </a>
          </div>
@@ -648,5 +647,11 @@
              <script defer src="https://dennissnellenberg.com/assets/js/index-new.js"></script>  
 
              <script src="/ID/me/script/app.js"></script>
+             <script>
+                function changeColor() {
+                  let color = document.getElementById('input').value;
+                  document.getElementById('div').style.background = color;
+                }
+              </script>
               </body>
 </html>

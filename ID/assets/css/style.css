@@ -3361,7 +3361,7 @@ footer{
   top: 0;
   left: 0;
   width: 100%;
-  background: aliceblue;
+  background: linear-gradient(11deg, var(--background_dark), var(--background));
   z-index: 9999999999999999;
   display: flex;
   align-items: center;

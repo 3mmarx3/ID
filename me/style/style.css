@@ -252,7 +252,7 @@ p a {
 .section {
     display: block;
     padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
+    padding-bottom: 0;
     position: relative;
 }
 
@@ -1394,6 +1394,10 @@ section.section.work-grid.small-work-grid.grid-fade.grid-rows-part {
     }
     .grid_one,.grid_tow,.row_grid,._grid_row{
         display: block;
+    }
+
+    .work-grid .work-items h4 span {
+        font-size: x-large;
     }
 }
 
