@@ -2592,7 +2592,7 @@ color: white;
         justify-content: space-evenly;
         align-items: center;
         position: fixed;
-
+        z-index: 999999999;
     }
  
 
@@ -3142,14 +3142,18 @@ color: white;
 }
 
 button._top {
-  position: fixed;
   z-index: 999999999999999999999999999999999999999999999999999999999999;
   border-radius: 50%;
-  right: 25px;
-  bottom: 25px;
+
   border: 2px solid;
   cursor: pointer;
   background: rgb(16, 16, 15);
+  width: 50px;
+  height: 50px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -3190,4 +3194,11 @@ button._top {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.flex_end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
