@@ -2211,11 +2211,11 @@ main {
        padding-top: calc(var(--section-padding) * 1);
     }
  
-    .about-services .row:nth-child(2) {
+    /* .about-services .row:nth-child(2) {
        width: 100%;
        margin-left: 0;
     }
- 
+  */
     .about-services .row:nth-child(2) .flex-col h5:nth-child(1) {
        display: none;
     }
