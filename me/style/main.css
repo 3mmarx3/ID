@@ -829,23 +829,25 @@ main {
  }
  
  .home-header .hanger {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
- }
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 50px;
+   background: var(--color-dark);
+   padding: 20px;
+   border-radius: 0px 150px 150px 0px;
+}
 
+.home-header .hanger  p {
+   margin: 0;
+   padding: 0;
+}
  
- .home-header .hanger p {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    padding-right: 5em;
-    padding-left: 20px;
-    line-height: 1.2;
- }
+
  
  .home-header .hanger p span {
     display: block;
@@ -860,6 +862,16 @@ main {
     background: var(--color-white);
     display: none;
  }
+
+.svg_icons {
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--color-blue);
+   border-radius: 50%;
+}
  
 
  .home-header .hanger .digital-ball .globe {
