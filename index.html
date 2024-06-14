@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ammar_Ahmed</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammar_Ahmed</title>
 </head>
+
 <body>
-<script>
-    const mobilePage = "/ID/ID/index.html";
+    <script>
+        const mobilePage = "/ID/ID/index.html";
 
-    const desktopPage = "/ID/me/index.html";
+        const desktopPage = "/ID/me/index.html";
 
-    function redirectBasedOnScreenSize() {
-        if (window.innerWidth <= 767) {
-            sessionStorage.setItem('redirected', 'mobile');
-            window.location.href = mobilePage;
-        } else {
-            if (window.innerWidth > 767) {
+        function redirectBasedOnScreenSize() {
+            if (window.innerWidth <= 767) {
                 sessionStorage.setItem('redirected', 'mobile');
-                                window.location.href = desktopPage;
+                window.location.href = mobilePage;
+            } else {
+                if (window.innerWidth > 767) {
+                    sessionStorage.setItem('redirected', 'mobile');
+                    window.location.href = desktopPage;
+                }
             }
         }
-    }
-    document.addEventListener('DOMContentLoaded', redirectBasedOnScreenSize);
-    window.onresize = redirectBasedOnScreenSize;
-</script>
+        document.addEventListener('DOMContentLoaded', redirectBasedOnScreenSize);
+        window.onresize = redirectBasedOnScreenSize;
+    </script>
 
 
 
@@ -33,4 +35,5 @@
 
 
 </body>
+
 </html>
