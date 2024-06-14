@@ -47,9 +47,12 @@
                                         </g>
                                     </svg>
                                 </div>
+                              
+                            
                                 <h2><span>
-                                        <div class="profile-picture"></div> Welcome
-                                    </span><span>together</span></h2>
+                                    <div class="profile-picture"></div> Welcome
+                                </span><span>together</span></h2>
+                                
                             </div>
                         </div>
                         <div class="row">
@@ -144,14 +147,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li class="btn btn-link btn-link-external">
-                                            <a href="https://www.linkedin.com/in/ammar-ahmed-543a58253/" target="_blank"
-                                                class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                                <span class="btn-text">
-                                                    <span class="btn-text-inner">LinkedIn</span>
-                                                </span>
-                                            </a>
-                                        </li>
+                                     
                                     </ul>
                                     <div class="stripe"></div>
                                 </div>
@@ -167,8 +163,12 @@
 
 
     <style>
+        html,body{
+            height: 100vh !important;
+            overflow: hidden !important;
+        }
         .section{
-            padding-top: 10vh !important;
+            padding-top: 5vh !important;
         }
         body{
             background: var(--color-dark) !important;
@@ -176,6 +176,27 @@
         .footer-rounded-div{
             height: 100vh;
         }
+        .footer .profile-picture {
+        margin-right: .125em;
+        height: 100px !important;
+        width: 100px !important;
+        transform: translateY(.1em);
+        border: 5px solid var(--color-blue);
+    }
+    .flex {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: x-large;
+}
+.btn-round .btn-click {
+    width: clamp(8em, 12vw, 11em);
+    height: clamp(8em, 12vw, 11em);
+    border-radius: 50%;
+    border: 0;
+    background: var(--color-dark);
+}
     </style>
 </body>
 </html>
