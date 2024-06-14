@@ -684,10 +684,6 @@ video.overlay {
     position: relative;
 }
 
-.btn-link.btn-left-top .code-by {
-    position: relative;
-    display: inline-block;
-}
 
 .btn-link.btn-left-top:hover .code-by {
     transform: translateX(-3.7em) rotate(0.001deg);

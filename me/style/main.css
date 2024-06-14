@@ -848,6 +848,10 @@ main {
 }
  
 
+svg.bi.bi-globe-americas {
+    fill: white;
+}
+
  
  .home-header .hanger p span {
     display: block;
@@ -3902,3 +3906,4 @@ audio.audioPlayer {
  .about-header {
    background: none !important;
 }
+
