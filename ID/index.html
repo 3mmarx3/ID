@@ -174,6 +174,7 @@
         }
         .footer-rounded-div{
             height: 100vh;
+            background: var(--color-dark);
         }
         .footer .profile-picture {
         margin-right: .125em;
@@ -214,18 +215,22 @@
 
 
 @media screen and (max-width:992px) {
-    .bottom-footer {
+    /* .bottom-footer {
         padding: 1vh 0 calc(var(--gap-padding) / 1.75) 0;
+    } */
+    .footer .container.medium .row:nth-child(2) {
+        padding-bottom: 10vh;
     }
 }
 
 
 
-@media screen and (min-width:993px)and (max-width:1500px) {
+@media screen and (min-width:720px)and (max-width:1500px) {
     .container.medium {
   
   padding: 0 8vh;
 }
+
 
 }
     </style>
