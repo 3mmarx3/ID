@@ -36,7 +36,7 @@
    position: relative;
    display: inline-flex;
    border-radius: 50%;
-   background: url("/ID/ID/img/399262887_1472912256875878_7583769342947303671_n.jpg") center center no-repeat;
+   background: url("/ID/me/img/me.jpg") center center no-repeat;
    background-size: cover;
    width: clamp(4.5em, 6.5vw, 8em);
    height: clamp(4.5em, 6.5vw, 8em);

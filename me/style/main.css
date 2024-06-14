@@ -721,7 +721,7 @@ main {
     min-height: 115vh;
     display: flex;
     align-items: center;
-    background: var(--color-gray);
+    background: #cdcdcd;
     overflow: hidden;
  }
  
@@ -831,7 +831,7 @@ main {
  .home-header .hanger {
    position: absolute;
    left: 0;
-   top: 50%;
+   top: 40%;
    transform: translateY(-50%);
    display: flex;
    align-items: center;
@@ -3907,3 +3907,8 @@ audio.audioPlayer {
    background: none !important;
 }
 
+@media screen and (max-width:992px) {
+   .home-header .hanger{
+      display: none !important;
+   }
+}
