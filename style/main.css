@@ -5831,10 +5831,15 @@ audio {
 
 .button_Cu {
   background: none;
-  background: black;
+  background: white;
   border-radius: 50%;
 }
 
+
+.button_Cu svg{
+  color: black !important;
+  fill: black !important;
+}
 .audio_body {
   background-color: var(--color-dark) !important;
 }
