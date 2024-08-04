@@ -5632,7 +5632,7 @@ section.section.work-grid.small-work-grid.grid-fade.grid-rows-part {
   text-transform: capitalize;
 }
 
-.Skils-services {
+.Skills-services {
   padding: 10vh 0;
 }
 
@@ -5764,7 +5764,7 @@ div.column:nth-child(2) {
 }
 
 .secondary {
-  background: var(--secondary);
+  background: var(--color-dark) !important;
 }
 
 .muted {
@@ -5835,10 +5835,6 @@ audio {
   border-radius: 50%;
 }
 
-.button_Cu svg {
-  color: black !important;
-  fill: black !important;
-}
 .audio_body {
   background-color: var(--color-dark) !important;
 }
@@ -5862,4 +5858,18 @@ audio {
 
 a.btn-click.magnetic.we span {
   color: white !important;
+}
+
+small {
+  font-size: 80%;
+  font-family: sans-serif;
+}
+
+.server.widget.secondary.row svg {
+  fill: var(--color-dark) !important;
+  color: var(--color-dark) !important;
+}
+
+small.muted.Copyright {
+  color: var(--color-dark) !important;
 }
