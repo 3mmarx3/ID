@@ -41,3 +41,7 @@ var dateTimeDisplays = document.querySelectorAll(".dateTimeDisplay");
 dateTimeDisplays.forEach(function (element) {
   element.innerHTML = "<small>" + formattedDateTime + "</small>";
 });
+
+document.querySelector("a").addEventListener("click", function (event) {
+  console.log("Link clicked!");
+});
