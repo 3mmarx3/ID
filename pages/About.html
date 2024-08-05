@@ -460,7 +460,20 @@
         <script src="https://dennissnellenberg.com/assets/js/locomotive-scroll.min.js"></script> 
                <script defer src="https://dennissnellenberg.com/assets/js/index-new.js"></script> 
                <script src="../script/app.js"></script>
-
+               <Script>
+                document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('a');
+        
+            links.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var url = link.getAttribute('href');
+                    window.open(url, '_blank');
+                });
+            });
+        });
+        
+            </Script>
             </body>
 
           

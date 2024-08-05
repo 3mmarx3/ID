@@ -1001,7 +1001,6 @@ svg.bi.bi-globe-americas {
 .home-intro .flex-col:nth-child(2) p {
   margin-bottom: 6em;
   padding-top: 0.5em;
-  max-width: 14em;
 }
 
 @media screen and (max-width: 720px) {
@@ -2395,13 +2394,6 @@ svg.bi.bi-globe-americas {
 }
 
 .about-awwwards .single-image .overlay:nth-child(1) {
-  /* background: url("../img/DSC07292.jpg") center center no-repeat;
-    background-size: cover;
-    height: 130%;
-    top: -25%;
-    width: 105%;
-    left: -5%; */
-
   background: url("../img/DSC07079.jpg") center center no-repeat;
   background-size: cover;
   top: -3%;
