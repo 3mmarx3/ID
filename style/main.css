@@ -5883,4 +5883,7 @@ p.pa {
   nav.nav.top.row {
     display: none !important ;
   }
+  div.column:nth-child(2) {
+    margin-top: 5rem;
+  }
 }
