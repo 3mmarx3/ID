@@ -5871,3 +5871,10 @@ p.pa {
 .container.medium.bg_ {
   background: white;
 }
+
+.border_E {
+  width: 70%;
+  background: #eee;
+  padding: 1px;
+  margin: auto;
+}
