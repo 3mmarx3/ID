@@ -1530,7 +1530,6 @@ svg.bi.bi-globe-americas {
 
 .work-tiles ul li a .flex-col:nth-child(1) {
   width: 100%;
-  padding-bottom: var(--gap-padding);
 }
 
 .work-tiles ul li a .flex-col:nth-child(2) {
@@ -1554,7 +1553,6 @@ svg.bi.bi-globe-americas {
 .work-tiles ul li a .tile-image {
   width: 100%;
   position: relative;
-  background: var(--color-lightgray);
   overflow: hidden;
 }
 
@@ -2415,8 +2413,8 @@ svg.bi.bi-globe-americas {
     hsla(220, 13%, 5%, 0.075) 0%,
     hsla(220, 13%, 5%, 0) 50%
   );
-  background-image: url(../img/me.jpg);
-  background-position: center;
+  background-image: url(../img/IMG_2077.PNG);
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
@@ -4033,10 +4031,11 @@ fieldset {
   position: relative;
   display: inline-flex;
   border-radius: 50%;
-  background: url("../img/me.jpg") center center no-repeat;
+  background: url("../img/IMG_2077.PNG") center center no-repeat;
   background-size: cover;
   width: clamp(4.5em, 6.5vw, 8em);
   height: clamp(4.5em, 6.5vw, 8em);
+  background-position: center top;
 }
 
 /* ------------------------- Pattern Dots -------------------------------------------------- */
@@ -4440,7 +4439,6 @@ h4 {
   font-style: normal;
   font-size: clamp(1.55em, 2.3vw, 2.5em);
   line-height: 1.45;
-  margin-bottom: 1em;
 }
 
 h5 {
@@ -5864,4 +5862,12 @@ small {
 
 small.muted.Copyright {
   color: var(--color-dark) !important;
+}
+
+p.pa {
+  margin-top: 10px;
+}
+
+.container.medium.bg_ {
+  background: white;
 }
